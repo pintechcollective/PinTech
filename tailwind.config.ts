@@ -1,17 +1,24 @@
-import type { Config } from "tailwindcss";
+import type { Config } from 'tailwindcss';
 
 export default {
   content: [
-    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    './pages/**/*.{js,ts,jsx,tsx,mdx}',
+    './components/**/*.{js,ts,jsx,tsx,mdx}',
+    './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        background: '#000000',
+        foreground: '#ffffff',
+        primary: '#06276d',
+        secondary: '#0e83fe',
+        accent: '#9cd633',
       },
+    },
+    fontFamily: {
+      Headings: ['FusionFont'],
+      Body: ['ClashDisplay'],
     },
   },
   plugins: [],
