@@ -2,11 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #000000;
-  --foreground: #ffffff;
-}
-
 @font-face {
   font-family: 'FusionFont';
   src: url('/fonts/fusion.ttf') format('truetype');
@@ -20,13 +15,6 @@
   font-style: normal;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 body {
   color: var(--foreground);
   background: var(--background);
@@ -38,4 +26,8 @@ h2,
 h3,
 h4 {
   font-family: FusionFont;
+}
+
+.clip-diagonal {
+  clip-path: polygon(10% 0%, 100% 0%, 100% 90%, 90% 100%, 0% 100%, 0% 10%);
 }
