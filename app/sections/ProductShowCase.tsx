@@ -3,7 +3,7 @@ import Robot from '@/public/Product.png';
 import Image from 'next/image';
 const ProductShowCase = () => {
   return (
-    <div className="bg-black text-white from-black to-[#0e83fe] py-[72px] py-24">
+    <div className="bg-black text-white bg-gradient-to-b from-black to-[#0e83fe] py-[72px] py-24">
       <h2 className="text-center text-5xl sm:text-6xl font-bold tracking-tighter">
         Reliable Technology
       </h2>
