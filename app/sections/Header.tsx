@@ -6,7 +6,7 @@ import { IoMenu } from 'react-icons/io5';
 
 const Header = () => {
   return (
-    <header className="sticky top-0">
+    <header className="sticky top-0 z-10">
       <div className="flex gap-3 justify-center items-center py-3 bg-black text-white text-sm">
         <p className="text-white/60 hidden md:block">
           Automate your workflow and boost productivity

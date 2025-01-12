@@ -15,8 +15,8 @@ const Hero = () => {
             <span className="bg-[linear-gradient(to_right,#f87AFF,#FB93D0,#FFDD99,#C3F0B2,#2FD8FE)] text-transparent bg-clip-text [-webkit-background-clip:text]">
               The Solutions are here
             </span>
-            <span className="inline-flex items-center gap-1">
-              About
+            <span className="inline-flex items-center gap-1 text-sm text-white/70">
+              Pricing
               <FaArrowRightLong className="h-2 w-2 inline-flex justify-center items-center" />
             </span>
           </a>

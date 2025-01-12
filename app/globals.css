@@ -21,13 +21,15 @@ body {
   font-family: ClashDisplay;
 }
 
-h1,
-h2,
-h3,
-h4 {
+h1 {
   font-family: FusionFont;
 }
 
+h2,
+h3 {
+  font-family: ClashDisplay;
+  font-weight: bold;
+}
 .clip-diagonal {
   clip-path: polygon(10% 0%, 100% 0%, 100% 90%, 90% 100%, 0% 100%, 0% 10%);
 }
