@@ -3,6 +3,8 @@ import React from 'react';
 import { IoMdAdd } from 'react-icons/io';
 import { RiSubtractFill } from 'react-icons/ri';
 import clsx from 'clsx';
+import { AnimatePresence, motion } from 'framer-motion';
+
 const FAQs = () => {
   const items = [
     {
@@ -52,14 +54,25 @@ const FAQs = () => {
           <span className="flex-1 text-lg font-bold">{questions}</span>
           {!isOpen ? <IoMdAdd /> : <RiSubtractFill />}
         </div>
-        <div
-          className={clsx('mt-4', {
-            hidden: !isOpen,
-            '': isOpen === true,
-          })}
-        >
-          {answers}
-        </div>
+        <AnimatePresence>
+          {isOpen && (
+            <motion.div
+              initial={{
+                opacity: 0,
+                height: 0,
+                marginTop: 0,
+              }}
+              animate={{
+                opacity: 1,
+                height: 'auto',
+                marginTop: '16px',
+              }}
+              exit={{ opacity: 0, height: 0, marginTop: 0 }}
+            >
+              {answers}
+            </motion.div>
+          )}
+        </AnimatePresence>
       </div>
     );
   };

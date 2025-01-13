@@ -1,5 +1,6 @@
 import React from 'react';
-import { BsRobot } from 'react-icons/bs';
+
+import Feature from './Feature';
 
 const Features = () => {
   const features = [
@@ -38,18 +39,7 @@ const Features = () => {
         </div>
         <div className="mt-16 flex flex-col gap-4 sm:flex-row sm:justify-center">
           {features.map(({ id, title, description }) => (
-            <div
-              key={id}
-              className="border border-white/30 px-5 py-10 text-center rounded-xl flex-1 sm:max-w-sm"
-            >
-              <div className="inline-flex h-14 w-14 bg-white text-black justify-center items-center rounded-lg">
-                <BsRobot />
-              </div>
-              <div>
-                <h3 className="mt-6 font-bold">{title}</h3>
-                <p className="mt-2 text-white/70">{description}</p>
-              </div>
-            </div>
+            <Feature title={title} description={description} key={id} id={id} />
           ))}
         </div>
       </div>
