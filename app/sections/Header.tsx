@@ -11,15 +11,6 @@ const Header = () => {
   const [isOpen,setOpen]=useState(false);
 
 
-  // const openMobile = () => {
-
-    
-  //   setOpen(true);
-
-  //   return (<div>
-
-  //   </div>)
-  // }
   return (
     <header className="sticky top-0 z-10">
       <div className="flex gap-3 justify-center items-center py-3 bg-black text-white text-sm">
@@ -66,9 +57,6 @@ const Header = () => {
     </nav>
   </div>
 </div>
-
-       
-
             <nav className="hidden md:flex gap-6  text-white/90 items-center">
               <a href="#">About</a>
               <a href="#">Pricing</a>
