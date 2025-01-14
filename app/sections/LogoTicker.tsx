@@ -21,7 +21,7 @@ const LogoTicker = () => {
         <h2 className="text-lg text-center text-white/70">
           Trusted by the worlds most innovative teams
         </h2>
-        <div className="relative flex my-8 overflow-hidden before:z-10 after:z-10 before:content-[''] after:content-[''] before:absolute after:absolute before:top-0 after:top-0 before:h-full after:h-full before:w-16 after:w-16 before:bg-gradient-to-r before:from-black/50 before:to-transparent after:bg-gradient-to-l after:from-black/50 after:to-transparent">
+        <div className="relative flex my-8 overflow-hidden  before:content-[''] after:content-[''] before:absolute after:absolute before:top-0 after:top-0 before:h-full after:h-full before:w-16 after:w-16 before:bg-gradient-to-r before:from-black/50 before:to-transparent after:bg-gradient-to-l after:from-black/50 after:to-transparent">
           <motion.div
             className="flex flex-none gap-16 pr-16 "
             transition={{
