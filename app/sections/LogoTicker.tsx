@@ -60,15 +60,20 @@ const LogoTicker = () => {
           </motion.div>
         </div>
       </div>
-      <div className=" flex justify-center items-center mt-16">
+      <motion.div
+        initial={{ opacity: 0, y: -300 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 3 }}
+        className=" flex justify-center items-center mt-16"
+      >
         <Image
           src={RobotArm}
           alt="Robot Arm"
           height={900}
           width={900}
-          className="relative transform translate-x-[10%] translate-y-[15%] mx-auto"
+          className="relative transform translate-x-[5%] translate-y-[15%] mx-auto"
         />
-      </div>
+      </motion.div>
     </div>
   );
 };
