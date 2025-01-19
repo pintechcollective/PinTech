@@ -5,7 +5,7 @@ import Logo from '@/public/icons/PT - LogoLock - Dark  BG.svg';
 import Image from 'next/image';
 import { IoMenu } from 'react-icons/io5';
 import { IoIosClose } from 'react-icons/io';
-
+import Link from 'next/link';
 const Header = () => {
   const [isOpen, setOpen] = useState(false);
 
@@ -23,13 +23,15 @@ const Header = () => {
       <div className="py-5 bg-black">
         <div className="container">
           <div className="flex items-center justify-between">
-            <Image
-              src={Logo}
-              alt="sas logo"
-              height={150}
-              width={150}
-              className="text-center m-4 object-cover"
-            />
+            <Link href={'/'}>
+              <Image
+                src={Logo}
+                alt="sas logo"
+                height={150}
+                width={150}
+                className="text-center m-4 object-cover"
+              />
+            </Link>
             <div className="relative">
               <IoMenu
                 className={
@@ -52,18 +54,18 @@ const Header = () => {
                   onClick={() => setOpen(!isOpen)}
                 />
                 <nav className="flex justify-center flex-col items-center text-white/90 gap-16 text-4xl">
-                  <a href="#">About</a>
-                  <a href="#">Pricing</a>
-                  <a href="#">Contact Us</a>
+                  <Link href={'/pages/about'}>About</Link>
+                  <Link href={'/pages/pricing'}>Pricing</Link>
+                  <Link href={'/pages/contact'}>Contact Us</Link>
                 </nav>
               </div>
             </div>
             <nav className="hidden md:flex gap-6  text-white/90 items-center">
-              <a href="#">About</a>
-              <a href="#">Pricing</a>
-              <a href="#">Contact Us</a>
-              <button className="bg-accent text-black px-4 py-2 rounded-lg font-medium inline-flex align-items justify-center tracking-right">
-                Get for Free
+              <Link href={'/pages/about'}>About</Link>
+              <Link href={'/pages/pricing'}>Pricing</Link>
+              <Link href={'/pages/contact'}>Contact Us</Link>
+              <button className="border-2 border-accent text-white px-6 py-2 font-medium inline-flex align-items justify-center tracking-right clip-diagonal">
+                Solutions
               </button>
             </nav>
           </div>

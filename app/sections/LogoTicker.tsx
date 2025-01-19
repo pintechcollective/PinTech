@@ -71,7 +71,7 @@ const LogoTicker = () => {
           alt="Robot Arm"
           height={900}
           width={900}
-          className="relative transform translate-x-[5%] translate-y-[15%] mx-auto"
+          className="relative transform translate-x-[5%] translate-y-[5%] mx-auto"
         />
       </motion.div>
     </div>

@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import './globals.css';
+import Header from './sections/Header';
 
 export const metadata: Metadata = {
   title: 'PinTech',
@@ -13,7 +14,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="font-ClashDisplay antialiased">{children}</body>
+      <body className="font-ClashDisplay antialiased">
+        <Header />
+        {children}
+      </body>
     </html>
   );
 }

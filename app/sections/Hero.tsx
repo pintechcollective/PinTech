@@ -22,7 +22,7 @@ const Hero = () => {
           </a>
         </div>
         <div className="flex justify-center md:w-screen">
-          <h1 className="text-4xl sm:text-7xl font-bold tracking-tight text-center mt-8">
+          <h1 className="text-4xl sm:text-7xl lg:text-9xl font-bold tracking-tight text-center mt-8">
             <a className="text-accent block md:w-screen">AMR Fleet</a>
             <span className="block md:w-screen">Operations</span>
           </h1>
