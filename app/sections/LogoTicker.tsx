@@ -1,17 +1,22 @@
 'use client';
 import React from 'react';
-import Logo from '@/public/icons/Logo.png';
+// import Logo from '@/public/icons/Logo.png';
+// import Logo2 from '@/public/icons/PT - LogoMark - BLABL.svg';
+// import Logo3 from '@/public/icons/PT - LogoMark - BLGR.svg';
+// import Logo4 from '@/public/icons/PT - LogoMark - DBLBL.svg';
+import Logo1 from '@/public/icons/PT - LogoMark - DBLGR.svg';
+import Logo2 from '@/public/icons/PT - ALT Mark - WHITE.svg';
 import Image from 'next/image';
-import RobotArm from '@/public/RobotArm,.png';
+import RobotArm from '@/public/Robot - Iphone.png';
 import { motion } from 'framer-motion';
 
 const images = [
-  { id: 1, src: Logo },
-  { id: 2, src: Logo },
-  { id: 3, src: Logo },
-  { id: 4, src: Logo },
-  { id: 5, src: Logo },
-  { id: 6, src: Logo },
+  { id: 1, src: Logo1 },
+  { id: 2, src: Logo2 },
+  { id: 3, src: Logo1 },
+  { id: 4, src: Logo2 },
+  { id: 5, src: Logo1 },
+  { id: 6, src: Logo2 },
 ];
 
 const LogoTicker = () => {
@@ -59,8 +64,8 @@ const LogoTicker = () => {
         <Image
           src={RobotArm}
           alt="Robot Arm"
-          height={600}
-          width={600}
+          height={900}
+          width={900}
           className="relative transform translate-x-[10%] translate-y-[15%] mx-auto"
         />
       </div>
