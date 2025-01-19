@@ -1,6 +1,6 @@
 'use client';
 import React, { useRef } from 'react';
-import Robot from '@/public/Product.png';
+import Robot from '@/public/Product.jpg';
 import Image from 'next/image';
 import { motion, useScroll, useTransform } from 'framer-motion';
 const ProductShowCase = () => {
