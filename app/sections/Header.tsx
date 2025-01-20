@@ -4,7 +4,7 @@ import { FaArrowRightLong } from 'react-icons/fa6';
 import Logo from '@/public/icons/PT - LogoLock - Dark  BG.svg';
 import Image from 'next/image';
 import { IoMenu } from 'react-icons/io5';
-import { IoIosClose } from 'react-icons/io';
+
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 import MobileLogo from '@/public/icons/PT - LogoMark - BLGR.svg';

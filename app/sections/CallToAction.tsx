@@ -1,7 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
 
-import Robot1 from '@/public/Mock bot Small 2.png';
 import Robot2 from '@/public/Mock Bot 2.png';
 const CallToAction = () => {
   return (

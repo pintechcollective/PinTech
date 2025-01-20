@@ -2,7 +2,6 @@
 import React from 'react';
 import { IoMdAdd } from 'react-icons/io';
 import { RiSubtractFill } from 'react-icons/ri';
-import clsx from 'clsx';
 import { AnimatePresence, motion } from 'framer-motion';
 
 const FAQs = () => {
