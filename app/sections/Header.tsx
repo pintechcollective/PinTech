@@ -6,8 +6,20 @@ import Image from 'next/image';
 import { IoMenu } from 'react-icons/io5';
 import { IoIosClose } from 'react-icons/io';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 const Header = () => {
   const [isOpen, setOpen] = useState(false);
+
+  //use params to determine what page
+  //use state to determine weather or not user is on the page or not
+
+  const pathname = usePathname();
+
+  const isActive = (path: string) => {
+    return pathname === path
+      ? 'border-b-2 border-[#9cd633] border-current lg:text-xl text-[#0e83fe]'
+      : '';
+  };
 
   return (
     <header className="sticky top-0 z-10">
@@ -54,16 +66,46 @@ const Header = () => {
                   onClick={() => setOpen(!isOpen)}
                 />
                 <nav className="flex justify-center flex-col items-center text-white/90 gap-16 text-4xl">
-                  <Link href={'/pages/about'}>About</Link>
-                  <Link href={'/pages/pricing'}>Pricing</Link>
-                  <Link href={'/pages/contact'}>Contact Us</Link>
+                  <Link
+                    href={'/pages/about'}
+                    className={`text-foreground ${isActive('/pages/about')}`}
+                  >
+                    About
+                  </Link>
+                  <Link
+                    href={'/pages/pricing'}
+                    className={`text-foreground ${isActive('/pages/pricing')}`}
+                  >
+                    Pricing
+                  </Link>
+                  <Link
+                    href={'/pages/contact'}
+                    className={`text-foreground ${isActive('/pages/contact')}`}
+                  >
+                    Contact Us
+                  </Link>
                 </nav>
               </div>
             </div>
             <nav className="hidden md:flex gap-6  text-white/90 items-center">
-              <Link href={'/pages/about'}>About</Link>
-              <Link href={'/pages/pricing'}>Pricing</Link>
-              <Link href={'/pages/contact'}>Contact Us</Link>
+              <Link
+                href={'/pages/about'}
+                className={`text-foreground ${isActive('/pages/about')}`}
+              >
+                About
+              </Link>
+              <Link
+                href={'/pages/pricing'}
+                className={`text-foreground ${isActive('/pages/pricing')}`}
+              >
+                Pricing
+              </Link>
+              <Link
+                href={'/pages/contact'}
+                className={`text-foreground ${isActive('/pages/contact')}`}
+              >
+                Contact Us
+              </Link>
               <button className="border-2 border-accent text-white px-6 py-2 font-medium inline-flex align-items justify-center tracking-right clip-diagonal">
                 Solutions
               </button>
