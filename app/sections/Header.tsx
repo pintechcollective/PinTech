@@ -6,6 +6,8 @@ import Image from 'next/image';
 import { IoMenu } from 'react-icons/io5';
 import { IoIosClose } from 'react-icons/io';
 import Link from 'next/link';
+import { motion } from 'framer-motion';
+import MobileLogo from '@/public/icons/PT - LogoMark - BLGR.svg';
 import { usePathname } from 'next/navigation';
 const Header = () => {
   const [isOpen, setOpen] = useState(false);
@@ -57,32 +59,62 @@ const Header = () => {
               <div
                 className={
                   isOpen
-                    ? 'fixed top-0 left-0 flex justify-center items-center h-[100%] w-[100%] bg-gray-900/50 md:hidden lg:hidden'
+                    ? 'fixed top-0 left-0 flex justify-center items-center h-screen w-screen bg-black/90 md:hidden lg:hidden m-0 p-0'
                     : 'hidden'
                 }
               >
-                <IoIosClose
+                {/* <IoIosClose
                   className="absolute top-[50px] right-4 left-4 h-14 w-14 md:hidden text-white "
                   onClick={() => setOpen(!isOpen)}
-                />
+                /> */}
                 <nav className="flex justify-center flex-col items-center text-white/90 gap-16 text-4xl">
-                  <Link
-                    href={'/pages/about'}
-                    className={`text-foreground ${isActive('/pages/about')}`}
+                  <motion.div
+                    initial={{ x: -50, opacity: 0 }}
+                    whileInView={{ x: -5, opacity: 1 }}
+                    whileHover={{ scale: 1.1 }}
+                    transition={{
+                      ease: 'easeInOut',
+                      duration: 0.75,
+                      delay: 0.25,
+                    }}
+                    className="flex justify-center items-center flex-col gap-8 w-full"
                   >
-                    About
-                  </Link>
-                  <Link
-                    href={'/pages/pricing'}
-                    className={`text-foreground ${isActive('/pages/pricing')}`}
-                  >
-                    Pricing
-                  </Link>
-                  <Link
-                    href={'/pages/contact'}
-                    className={`text-foreground ${isActive('/pages/contact')}`}
-                  >
-                    Contact Us
+                    <Link
+                      href={'/pages/about'}
+                      className={`text-foreground ${isActive(
+                        '/pages/about'
+                      )} m-2`}
+                      onClick={() => setOpen(!isOpen)}
+                    >
+                      About
+                    </Link>
+                    <Link
+                      href={'/pages/pricing'}
+                      className={`text-foreground ${isActive(
+                        '/pages/pricing'
+                      )}`}
+                      onClick={() => setOpen(!isOpen)}
+                    >
+                      Pricing
+                    </Link>
+                    <Link
+                      href={'/pages/contact'}
+                      className={`text-foreground ${isActive(
+                        '/pages/contact'
+                      )}`}
+                      onClick={() => setOpen(!isOpen)}
+                    >
+                      Contact Us
+                    </Link>
+                  </motion.div>
+                  <Link href={'/'}>
+                    <Image
+                      src={MobileLogo}
+                      alt="sas logo"
+                      height={100}
+                      width={100}
+                      className="mx-auto m-4 object-cover"
+                    />
                   </Link>
                 </nav>
               </div>
