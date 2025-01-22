@@ -8,12 +8,14 @@ import ProductShowCase from './sections/ProductShowCase';
 export default function Home() {
   return (
     <>
-      <Hero />
-      <LogoTicker />
-      <Features />
-      <ProductShowCase />
-      <FAQs />
-      <CallToAction />
+      <div className="overflow-x-hidden">
+        <Hero />
+        <LogoTicker />
+        <Features />
+        <ProductShowCase />
+        <FAQs />
+        <CallToAction />
+      </div>
     </>
   );
 }

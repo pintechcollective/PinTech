@@ -17,7 +17,7 @@ const Hero = () => {
           opacity: 0,
         }}
         whileInView={{
-          opacity: 0.2,
+          opacity: 0.1,
         }}
         transition={{ duration: 3 }}
       >
