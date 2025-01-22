@@ -1,10 +1,15 @@
 import React from 'react';
 import { FaArrowRightLong } from 'react-icons/fa6';
+import Logo from '@/public/icons/PT - LogoMark - BLGR.svg';
+import Image from 'next/image';
 // import Image from 'next/image';
 // import RobotArm from '@/public/RobotArm,.png';
 const Hero = () => {
   return (
     <div className=" bg-black text-white bg-[linear-gradient(to_bottom,#000,#06276d_34%,#0e83fe_52%,#9cd633_98%)] py-[72px] sm:py-24 relative overflow-clip ">
+      <div className="absolute top-32 lg:top-44 inset-0 flex items-center justify-center opacity-30">
+        <Image src={Logo} alt="Logo" className="w-[800px] h-[800px]" priority />
+      </div>
       <div className="absolute h-[375px] w-[750px] sm:w-[1536px] sm:h-[768px] lg:w-[2400px] lg:h-[1200px] rounded-[100%] bg-black left-1/2 -translate-x-1/2 border border-[#1BFC06_65%] bg-[radial-gradient(closest-side,#000_82%,#0e83fe)] top-[calc(100%-120px)]"></div>
       <div className="container relative ">
         <div className="flex items-center justify-center md:w-screen">

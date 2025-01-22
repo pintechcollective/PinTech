@@ -19,7 +19,7 @@ const Header = () => {
 
   const isActive = (path: string) => {
     return pathname === path
-      ? 'border-b-2 border-[#9cd633] border-current lg:text-xl text-[#0e83fe]'
+      ? 'border-b-2 border-[#9cd633]  lg:text-xl text-[#0e83fe]'
       : '';
   };
 
@@ -113,7 +113,7 @@ const Header = () => {
                       alt="sas logo"
                       height={100}
                       width={100}
-                      className="mx-auto m-4 object-cover"
+                      className="mx-auto object-cover"
                     />
                   </Link>
                 </nav>
