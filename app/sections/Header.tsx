@@ -29,7 +29,7 @@ const Header = () => {
         <p className="text-white/60 hidden md:block">
           Automate your workflow and boost productivity
         </p>
-        <Link href={'/pages/about'} className="hover:text-accent">
+        <Link href={'/pages/about'} className="text-accent hover:text-white">
           <div className="inline-flex gap-1 items-center">
             <p>Learn More Now</p>
             <FaArrowRightLong className="h-4 w-4 inline-flex justify-center items-center" />
