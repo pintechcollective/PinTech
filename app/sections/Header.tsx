@@ -19,7 +19,7 @@ const Header = () => {
 
   const isActive = (path: string) => {
     return pathname === path
-      ? 'border-b-2 border-[#9cd633]  lg:text-xl text-[#0e83fe]'
+      ? 'border-b-2 border-[#9cd633]  lg:text-xl text-secondary'
       : '';
   };
 
@@ -29,10 +29,12 @@ const Header = () => {
         <p className="text-white/60 hidden md:block">
           Automate your workflow and boost productivity
         </p>
-        <div className="inline-flex gap-1 items-center">
-          <p>Get started for Free</p>
-          <FaArrowRightLong className="h-4 w-4 inline-flex justify-center items-center" />
-        </div>
+        <Link href={'/pages/about'} className="hover:text-accent">
+          <div className="inline-flex gap-1 items-center">
+            <p>Learn More Now</p>
+            <FaArrowRightLong className="h-4 w-4 inline-flex justify-center items-center" />
+          </div>
+        </Link>
       </div>
       <div className="py-5 bg-black">
         <div className="container">
@@ -113,6 +115,7 @@ const Header = () => {
                       alt="sas logo"
                       height={100}
                       width={100}
+                      onClick={() => setOpen(!isOpen)}
                       className="mx-auto object-cover"
                     />
                   </Link>
@@ -138,9 +141,14 @@ const Header = () => {
               >
                 Contact Us
               </Link>
-              <button className="border-2 border-accent text-white px-6 py-2 font-medium inline-flex align-items justify-center tracking-right clip-diagonal">
+              <Link
+                href={'/pages/solutions'}
+                className={`border-2 border-accent text-white px-4 py-2 font-medium inline-flex align-items justify-center tracking-right clip-diagonal ${isActive(
+                  '/pages/solutions'
+                )}`}
+              >
                 Solutions
-              </button>
+              </Link>
             </nav>
           </div>
         </div>

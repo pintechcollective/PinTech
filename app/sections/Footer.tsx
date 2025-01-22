@@ -1,5 +1,5 @@
 import React from 'react';
-import { CiFacebook, CiInstagram, CiLinkedin } from 'react-icons/ci';
+import { BsFacebook, BsLinkedin, BsInstagram } from 'react-icons/bs';
 
 const Footer = () => {
   return (
@@ -12,13 +12,13 @@ const Footer = () => {
           </div>
           <ul className="flex justify-center gap-2.5">
             <li>
-              <CiFacebook />
+              <BsFacebook />
             </li>
             <li>
-              <CiInstagram />
+              <BsInstagram />
             </li>
             <li>
-              <CiLinkedin />
+              <BsLinkedin />
             </li>
           </ul>
         </div>
