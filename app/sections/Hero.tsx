@@ -1,7 +1,9 @@
 'use client';
 import React from 'react';
 import { FaArrowRightLong } from 'react-icons/fa6';
-import Logo from '@/public/icons/PT - LogoMark - BLGR.svg';
+// import Logo from '@/public/icons/PT - LogoMark - BLGR.svg';
+import Logo2 from '@/public/icons/PT - LogoMark - BLAGR.svg';
+
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 // import Image from 'next/image';
@@ -14,12 +16,17 @@ const Hero = () => {
         initial={{
           opacity: 0,
         }}
-        animate={{
-          opacity: 0.3,
+        whileInView={{
+          opacity: 0.2,
         }}
-        transition={{ duration: 5 }}
+        transition={{ duration: 3 }}
       >
-        <Image src={Logo} alt="Logo" className="w-[800px] h-[800px]" priority />
+        <Image
+          src={Logo2}
+          alt="Logo"
+          className="w-[800px] h-[800px]"
+          priority
+        />
       </motion.div>
       <div className="absolute h-[375px] w-[750px] sm:w-[1536px] sm:h-[768px] lg:w-[2400px] lg:h-[1200px] rounded-[100%] bg-black left-1/2 -translate-x-1/2 border border-[#1BFC06_65%] bg-[radial-gradient(closest-side,#000_82%,#0e83fe)] top-[calc(100%-120px)]"></div>
       <div className="container relative ">
