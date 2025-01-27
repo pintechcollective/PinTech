@@ -4,7 +4,7 @@ import MeetTheTeam from '@/app/sections/About/MeetTheTeam';
 import { Motion } from '@/app/sections/About/Motion';
 const About = () => {
   return (
-    <div className="overflow-x-hidden h-screen ">
+    <div>
       <Motion>
         <AboutHero />
         <MeetTheTeam />
