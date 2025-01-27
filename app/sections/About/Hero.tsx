@@ -4,8 +4,8 @@ import Image from 'next/image';
 
 const AboutHero = () => {
   return (
-    <div className="flex py-[72px] justify-evenly items-center max-w-screen-lg mx-auto px-4  flex-wrap-reverse">
-      <div className="w-full lg:pr-[100px] md:w-1/2 flex  mb-8 md:mb-0">
+    <div className="flex py-[72px] justify-evenly items-center max-w-screen-lg mx-auto px-4  flex-wrap-reverse ">
+      <div className="w-full lg:pr-[100px] md:w-1/2 lg:flex  mb-8 md:mb-0 hidden">
         <Image
           src={Logo}
           alt="Pintech Logo"
