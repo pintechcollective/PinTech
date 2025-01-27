@@ -37,7 +37,7 @@ const Member = ({
   return (
     <div
       key={id}
-      className="border border-white/30 px-5 py-10 text-center rounded-xl flex-1 sm:max-w-sm relative "
+      className=" px-5 py-10 text-center rounded-xl flex-1 sm:max-w-sm relative "
     >
       <motion.div
         className="absolute inset-0 border-4 border-accent rounded-xl"

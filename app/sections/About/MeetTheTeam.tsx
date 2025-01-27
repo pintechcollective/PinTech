@@ -28,7 +28,7 @@ const MeetTheTeam = () => {
     },
   ];
   return (
-    <div className="bg-black text-white bg-gradient-to-b from-black to-[#0e83fe] py-[72px] py-24">
+    <div className="bg-black text-white bg-gradient-to-b from-[#0e83fe] to-black py-[72px] py-24">
       <div className="flex flex-col justify-center items-center py-[72px]">
         <div className="w-full md:w-1/2">
           <h2 className="text-center text-white font-bold text-5xl sm:text-6xl tracking-normal">
