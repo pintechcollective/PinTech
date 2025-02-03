@@ -17,17 +17,17 @@ const Statement = () => {
       section: 'Information We Collect',
       details: [
         {
-          type: 'Personal Information',
+          purpose: 'Personal Information',
           description:
             'We may collect personal information such as your name, email address, phone number, and any other details you voluntarily provide when you contact us or request services.',
         },
         {
-          type: 'Technical Information',
+          purpose: 'Technical Information',
           description:
             "We collect information about your device and your use of the Site, such as IP addresses, browser type, and access times. This information is used to improve the Site's performance and user experience.",
         },
         {
-          type: 'Cookies and Tracking Technologies',
+          purpose: 'Cookies and Tracking Technologies',
           description:
             'We use cookies and similar tracking technologies to monitor your activity on our Site and hold certain information. Cookies are files with a small amount of data that may include an anonymous unique identifier. You can instruct your browser to refuse all cookies or to indicate when a cookie is being sent.',
         },
@@ -59,12 +59,12 @@ const Statement = () => {
       section: 'How We Share Your Information',
       details: [
         {
-          category: 'Service Providers',
+          purpose: 'Service Providers',
           description:
             'We may share your information with third-party service providers who assist us in operating the Site or providing our services. These service providers are bound by contractual obligations to protect your information and use it only for the purposes for which it was disclosed.',
         },
         {
-          category: 'Legal Compliance',
+          purpose: 'Legal Compliance',
           description:
             'We may disclose your information if required to do so by law or if we believe that such action is necessary to comply with legal obligations, protect our rights, or respond to legal claims.',
         },
@@ -179,21 +179,39 @@ const Statement = () => {
               {details &&
                 details.map((detail, index) => (
                   <div key={index}>
-                    <strong>{detail.type}:</strong> {detail.description}
+                    <strong className="text-accent">{detail.purpose}:</strong>{' '}
+                    {detail.description}
                   </div>
                 ))}
               {rights &&
                 rights.map((right, index) => (
                   <div key={index}>
-                    <strong>{right.name}:</strong> {right.description}
+                    <strong className="text-accent">{right.name}:</strong>{' '}
+                    {right.description}
                   </div>
                 ))}
               {contactInfo && (
                 <div>
                   <strong>Contact Information:</strong>
-                  <div>Company: {contactInfo.company}</div>
-                  <div>Address: {contactInfo.address}</div>
-                  <div>Email: {contactInfo.email}</div>
+                  <div>
+                    <div>
+                      Company:{' '}
+                      <a className="text-accent">{contactInfo.company}</a>
+                    </div>
+                    <div>
+                      Address:{' '}
+                      <a className="text-accent"> {contactInfo.address}</a>{' '}
+                    </div>
+                    <div>
+                      Email:{' '}
+                      <a
+                        className="text-accent"
+                        href="mailto:info@pintechcollective.com"
+                      >
+                        {contactInfo.email}
+                      </a>
+                    </div>
+                  </div>
                 </div>
               )}
             </motion.div>
