@@ -21,14 +21,9 @@ const AboutHero = () => {
             About Us
           </h2>
           <p className="text-lg text-white/70 text-center mt-5">
-            At Pintech, we’re pioneers in robotics and automation solutions,
-            transforming industries with innovative technology. Our mission is
-            simple: to streamline complex tasks and improve productivity through
-            cutting-edge robotics. From advanced machine learning algorithms to
-            automated workflows, we empower businesses to stay ahead in a
-            rapidly evolving world.
+          Pinnacle Technology Collective specializes in providing skilled technicians and consulting services for Autonomous Mobile Robot (AMR) companies. Our focus is on deploying and maintaining robots, offering AMR companies an affordable and reliable Operations and Maintenance Program provider. Our mission is to enable businesses to enhance efficiency and streamline operations through effective robotic solutions, ensuring optimal performance and longevity of their robotic assets.”
           </p>
-          <p className="text-lg text-white/70 text-center mt-5">
+          {/* <p className="text-lg text-white/70 text-center mt-5">
             With our tailored solutions, we help businesses optimize operations,
             reduce costs, and increase efficiency. Our team of experts works
             closely with clients to deliver personalized automation systems that
@@ -39,7 +34,7 @@ const AboutHero = () => {
           <p className="text-xl text-white/70 text-center mt-5">
             Join us on our journey to revolutionize the future of automation.
             Let’s build smarter, more efficient solutions together.
-          </p>
+          </p> */}
         </div>
       </div>
     </div>

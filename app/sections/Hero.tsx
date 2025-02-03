@@ -60,8 +60,7 @@ const Hero = () => {
         </div>
         <div className="flex justify-center md:w-screen">
           <p className="text-center text-xl mt-8 max-w-md p-4">
-            Reduce your operational costs up to 60% with Pinnacle Technology
-            Collective expert solutions.
+          Pinnacle Technology Collective empowers Autonomous Mobile Robot (AMR) fleet operations and can reduce operational costs by up to 60%
           </p>
         </div>
         <div className="flex justify-center mt-8 md:w-screen">

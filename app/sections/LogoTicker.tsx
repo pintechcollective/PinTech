@@ -24,7 +24,7 @@ const LogoTicker = () => {
     <div className="bg-black text-white py-24">
       <div className="container max-w-screen-lg mx-auto px-4">
         <h2 className="text-lg text-center text-white/70">
-          Trusted by the worlds most innovative teams
+        Empowering robotics companies to grow faster by offloading the most costly and cumbersome part of the business, fleet operations.
         </h2>
         <div className="relative flex my-8 overflow-hidden  before:content-[''] after:content-[''] before:absolute after:absolute before:top-0 after:top-0 before:h-full after:h-full before:w-16 after:w-16 before:bg-gradient-to-r before:from-black/50 before:to-transparent after:bg-gradient-to-l after:from-black/50 after:to-transparent">
           <motion.div
