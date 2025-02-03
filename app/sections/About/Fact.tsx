@@ -3,17 +3,15 @@
 import React, { useEffect, useRef } from 'react';
 import { motion, useMotionTemplate, useMotionValue } from 'framer-motion';
 import Image from 'next/image';
-const Member = ({
+const Fact = ({
   id,
-  title,
-  name,
-  description,
+  hours,
+  service,
   image,
 }: {
   id: number;
-  title: string;
-  name: string;
-  description: string;
+  hours: number;
+  service: string;
   image: string;
 }) => {
   const offsetX = useMotionValue(-100);
@@ -55,22 +53,12 @@ const Member = ({
         whileInView={{
           opacity: 1,
         }}
-      >
-        <Image
-          alt="professional headshot"
-          src={image}
-          height={500}
-          width={500}
-          className="object-cover"
-        />
-      </motion.div>
+      ></motion.div>
       <div>
-        <h2 className="text-sm font-bold text-white">{name}</h2>
-        <h3 className="mt-6 font-thin text-white/50">{title}</h3>
-        <p className="mt-2 text-white/70">{description}</p>
+        <h2 className="text-5xl font-bold text-white">{`${hours} + ${service}`}</h2>
       </div>
     </div>
   );
 };
 
-export default Member;
+export default Fact;

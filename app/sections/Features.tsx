@@ -6,21 +6,18 @@ const Features = () => {
   const features = [
     {
       id: 1,
-      title: 'Integration System',
-      description:
-        'Seamlessly integrate our robotics solutions into your existing workflows with minimal disruption, ensuring efficiency and productivity.',
+      title: 'Train',
+      description: 'Empowering success for your team and ours',
     },
     {
       id: 2,
-      title: 'Goal Setting & Traction',
-      description:
-        'Define your objectives and track your progress with precision. Our system provides actionable insights to help you achieve your goals.',
+      title: 'Deploy',
+      description: 'Seamless integration for optimal performance',
     },
     {
       id: 3,
-      title: 'Secure Data Encryption',
-      description:
-        'Protect sensitive data with state-of-the-art encryption, ensuring your robotics operations remain safe and secure at all times.',
+      title: 'Maintain',
+      description: 'Ensuring maximum uptime, reliability, and efficiency',
     },
   ];
 
@@ -32,9 +29,8 @@ const Features = () => {
         </h2>
         <div className="max-w-xl mx-auto">
           <p className="text-xl text-white/70 text-center mt-5">
-            Discover the features that make our robotics solutions the best in
-            the industry. We deliver cutting-edge technology to help you achieve
-            your business objectives effortlessly.
+            Empowering robotics companies to grow faster by offloading the most
+            costly and cumbersome part of the business, fleet operations.
           </p>
         </div>
         <div className="mt-16 flex flex-col gap-4 sm:flex-row sm:justify-center">

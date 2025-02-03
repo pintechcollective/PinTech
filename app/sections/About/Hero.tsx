@@ -20,8 +20,19 @@ const AboutHero = () => {
           <h2 className="text-center text-white font-bold text-5xl sm:text-6xl tracking-normal">
             About Us
           </h2>
+          <p className="text-xl text-white/70 text-center mt-5">
+            “Empowering robotics companies to grow faster by offloading the most
+            costly and cumbersome part of the business, fleet operations.”
+          </p>
           <p className="text-lg text-white/70 text-center mt-5">
-          Pinnacle Technology Collective specializes in providing skilled technicians and consulting services for Autonomous Mobile Robot (AMR) companies. Our focus is on deploying and maintaining robots, offering AMR companies an affordable and reliable Operations and Maintenance Program provider. Our mission is to enable businesses to enhance efficiency and streamline operations through effective robotic solutions, ensuring optimal performance and longevity of their robotic assets.”
+            Pinnacle Technology Collective specializes in providing skilled
+            technicians and consulting services for Autonomous Mobile Robot
+            (AMR) companies. Our focus is on deploying and maintaining robots,
+            offering AMR companies an affordable and reliable Operations and
+            Maintenance Program provider. Our mission is to enable businesses to
+            enhance efficiency and streamline operations through effective
+            robotic solutions, ensuring optimal performance and longevity of
+            their robotic assets.”
           </p>
           {/* <p className="text-lg text-white/70 text-center mt-5">
             With our tailored solutions, we help businesses optimize operations,
@@ -30,10 +41,6 @@ const AboutHero = () => {
             seamlessly integrate into existing processes. Whether you’re in
             manufacturing, logistics, or service industries, Pintech is your
             trusted partner in driving digital transformation.
-          </p>
-          <p className="text-xl text-white/70 text-center mt-5">
-            Join us on our journey to revolutionize the future of automation.
-            Let’s build smarter, more efficient solutions together.
           </p> */}
         </div>
       </div>
