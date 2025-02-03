@@ -6,17 +6,19 @@ import Testimonials from './sections/Testimonials';
 import Hero from './sections/Hero';
 import LogoTicker from './sections/LogoTicker';
 import ProductShowCase from './sections/ProductShowCase';
+import RobotArmSection from './sections/RobotArmSection';
 export default function Home() {
   return (
     <>
       <div className="overflow-x-hidden">
         <Motion>
           <Hero />
-          <LogoTicker />
+          <RobotArmSection />
           <Features />
           <ProductShowCase />
           <FAQs />
           <Testimonials />
+          <LogoTicker />
           <CallToAction />
         </Motion>
       </div>

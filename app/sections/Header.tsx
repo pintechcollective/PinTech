@@ -91,13 +91,22 @@ const Header = () => {
                       About
                     </Link>
                     <Link
-                      href={'/pages/pricing'}
+                      href={'/pages/services'}
                       className={`text-foreground ${isActive(
-                        '/pages/pricing'
+                        '/pages/services'
                       )}`}
                       onClick={() => setOpen(!isOpen)}
                     >
-                      Pricing
+                      Services
+                    </Link>
+                    <Link
+                      href={'/pages/privacy'}
+                      className={`text-foreground ${isActive(
+                        '/pages/privacy'
+                      )}`}
+                      onClick={() => setOpen(!isOpen)}
+                    >
+                      Privacy
                     </Link>
                     <Link
                       href={'/pages/contact'}
@@ -130,10 +139,10 @@ const Header = () => {
                 About
               </Link>
               <Link
-                href={'/pages/pricing'}
+                href={'/pages/privacy'}
                 className={`text-foreground ${isActive('/pages/pricing')}`}
               >
-                Pricing
+                Privacy
               </Link>
               <Link
                 href={'/pages/contact'}
@@ -142,9 +151,9 @@ const Header = () => {
                 Contact Us
               </Link>
               <Link
-                href={'/pages/solutions'}
+                href={'/pages/services'}
                 className={`border-2 border-accent text-white px-4 py-2 font-medium inline-flex align-items justify-center tracking-right clip-diagonal ${isActive(
-                  '/pages/solutions'
+                  '/pages/services'
                 )}`}
               >
                 Solutions

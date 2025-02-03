@@ -7,7 +7,6 @@ import React from 'react';
 import Logo1 from '@/public/icons/PT - LogoMark - DBLGR.svg';
 import Logo2 from '@/public/icons/PT - ALT Mark - WHITE.svg';
 import Image from 'next/image';
-import RobotArm from '@/public/Robot - Iphone.png';
 import { motion } from 'framer-motion';
 
 const images = [
@@ -21,7 +20,7 @@ const images = [
 
 const LogoTicker = () => {
   return (
-    <div className="bg-black text-white py-24">
+    <div className="bg-black text-white py-12">
       <div className="container max-w-screen-lg mx-auto px-4">
         {/* <h2 className="text-lg text-center text-white/70">
         Empowering robotics companies to grow faster by offloading the most costly and cumbersome part of the business, fleet operations.
@@ -60,9 +59,9 @@ const LogoTicker = () => {
           </motion.div>
         </div>
       </div>
-      <motion.div
-        initial={{ opacity: 0, y: -300 }}
-        whileInView={{ opacity: 1, y: 0 }}
+      {/* <motion.div
+        initial={{ opacity: 0, x: 300 }}
+        whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 3 }}
         className=" flex justify-center items-center mt-16"
       >
@@ -73,7 +72,7 @@ const LogoTicker = () => {
           width={900}
           className="relative transform translate-x-[5%] translate-y-[20%] lg:translate-y-[5%] mx-auto"
         />
-      </motion.div>
+      </motion.div> */}
     </div>
   );
 };
