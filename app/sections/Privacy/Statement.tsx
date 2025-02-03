@@ -245,6 +245,11 @@ const Statement = () => {
             )
           )}
         </div>
+        <div>
+          <p className="text-md text-white/70 m-8  text-start">
+            Last Updated On: February 2nd, 2025
+          </p>
+        </div>
       </div>
     </div>
   );

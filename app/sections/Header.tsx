@@ -12,6 +12,8 @@ import { usePathname } from 'next/navigation';
 const Header = () => {
   const [isOpen, setOpen] = useState(false);
 
+  const [isLegalOpen, setLegalOpen] = useState(false);
+
   //use params to determine what page
   //use state to determine weather or not user is on the page or not
 
@@ -138,12 +140,35 @@ const Header = () => {
               >
                 About
               </Link>
-              <Link
-                href={'/pages/privacy'}
-                className={`text-foreground ${isActive('/pages/pricing')}`}
-              >
-                Privacy
-              </Link>
+              <div>
+                <div
+                  className="cursor-pointer text-foreground"
+                  onClick={() => setLegalOpen(!isLegalOpen)}
+                >
+                  Legal
+                </div>
+                {isLegalOpen && (
+                  <div className="flex flex-col">
+                    <Link
+                      href={'/pages/terms'}
+                      className={`text-foreground ${isActive('/pages/terms')}`}
+                      onClick={() => setOpen(!isOpen)}
+                    >
+                      Terms of Service
+                    </Link>
+                    <Link
+                      href={'/pages/privacy'}
+                      className={`text-foreground ${isActive(
+                        '/pages/privacy'
+                      )}`}
+                      onClick={() => setOpen(!isOpen)}
+                    >
+                      Privacy Policy
+                    </Link>
+                  </div>
+                )}
+              </div>
+
               <Link
                 href={'/pages/contact'}
                 className={`text-foreground ${isActive('/pages/contact')}`}
