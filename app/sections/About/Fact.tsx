@@ -2,12 +2,10 @@
 
 import React, { useEffect, useRef } from 'react';
 import { motion, useMotionTemplate, useMotionValue } from 'framer-motion';
-import Image from 'next/image';
 const Fact = ({
   id,
   hours,
   service,
-  image,
 }: {
   id: number;
   hours: number;
