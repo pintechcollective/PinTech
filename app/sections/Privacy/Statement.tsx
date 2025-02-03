@@ -140,7 +140,12 @@ const Statement = () => {
     id: number;
     section: string;
     text?: string;
-    details?: { type: string; description: string }[];
+    details?: {
+      type?: string;
+      purpose?: string;
+      category?: string;
+      description: string;
+    }[];
     rights?: { name: string; description: string }[];
     contactInfo?: { company: string; address: string; email: string };
   }) => {
