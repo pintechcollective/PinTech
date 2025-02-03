@@ -53,7 +53,7 @@ const Fact = ({
         }}
       ></motion.div>
       <div>
-        <h2 className="text-5xl font-bold text-white">{`${hours} + ${service}`}</h2>
+        <h2 className="text-3xl font-bold text-white/90">{`${hours} + ${service}`}</h2>
       </div>
     </div>
   );

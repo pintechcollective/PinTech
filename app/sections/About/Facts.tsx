@@ -27,6 +27,9 @@ const Facts = () => {
   return (
     <div className="bg-black text-white bg-gradient-to-b from-[#0e83fe] to-black py-[42px] ">
       <div className="flex flex-col justify-center items-center">
+        <h2 className="text-center font-bold text-5xl sm:text-6xl tracking-tighter">
+          Experience That Counts
+        </h2>
         <div className="mt-12 flex flex-col gap-4 sm:flex-row sm:justify-center">
           {Services.map(({ id, hours, service, image }) => (
             <Fact
