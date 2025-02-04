@@ -9,7 +9,7 @@ const Gallery = () => {
     },
     {
       id: 2,
-      src: '/robots/Mock Bot 3i.jpg',
+      src: '/robots/Mock bot 3i.jpg',
       alt: 'Mock Bot 3',
     },
     {
