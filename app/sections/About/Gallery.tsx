@@ -19,7 +19,7 @@ const Gallery = () => {
     },
   ];
   return (
-    <div className="bg-black  overflow-hidden">
+    <div className="bg-gradient-to-b from-black to-accent/25 overflow-hidden">
       <div className="flex py-[72px] justify-evenly items-center max-w-screen-lg mx-auto px-4  flex-wrap-reverse ">
         <h2 className="text-center text-white font-bold text-5xl sm:text-6xl tracking-normal">
           Reliable Technology
