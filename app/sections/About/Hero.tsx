@@ -17,7 +17,7 @@ const AboutHero = () => {
         </div>
 
         <div className="w-full md:w-1/2">
-          <h2 className="text-center text-white font-bold text-5xl sm:text-6xl tracking-normal">
+          <h2 className="text-center text-white font-bold text-6xl sm:text-6xl tracking-tighter">
             About Us
           </h2>
 

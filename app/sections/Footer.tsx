@@ -70,13 +70,13 @@ const Footer = () => {
             </p>
 
             <div className="flex flex-col items-start mt-5 space-y-2">
-              <p className="text-gray-600 transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:cursor-pointer hover:text-accent">
+              <p className="text-gray-600 transition-colors duration-300 dark:text-gray-300  hover:underline hover:cursor-pointer hover:text-accent">
                 Robotics and Automation
               </p>
-              <p className="text-gray-600 transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:cursor-pointer hover:text-accent">
+              <p className="text-gray-600 transition-colors duration-300 dark:text-gray-300 hover:underline hover:cursor-pointer hover:text-accent">
                 Autonomous mobile robotics
               </p>
-              <p className="text-gray-600 transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:cursor-pointer hover:text-accent">
+              <p className="text-gray-600 transition-colors duration-300 dark:text-gray-300  hover:underline hover:cursor-pointer hover:text-accent">
                 Technology consulting and operations & maintenance services
               </p>
             </div>
