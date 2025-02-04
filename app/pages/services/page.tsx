@@ -1,9 +1,12 @@
 import React from 'react';
 import ServicesGrid from '@/app/sections/Services/ServicesGrid';
+import { Motion } from '@/app/sections/About/Motion';
 const Services = () => {
   return (
     <div>
-      <ServicesGrid />
+      <Motion>
+        <ServicesGrid />
+      </Motion>
     </div>
   );
 };
