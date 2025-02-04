@@ -228,7 +228,7 @@ const Statement = () => {
           Privacy Policy Statement
         </h2>
         <p className="text-md text-white/70 m-8  text-center">
-          Pintech, Inc. Privacy Policy
+          Pinnacle Technology Collective Privacy Policy
         </p>
         <div className="mt-12 max-w-[648px] mx-auto">
           {sections.map(

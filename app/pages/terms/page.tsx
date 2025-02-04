@@ -1,7 +1,11 @@
 import React from 'react';
-
+import TermsStatement from '@/app/sections/Terms/TermsStatement';
 const Terms = () => {
-  return <div></div>;
+  return (
+    <div>
+      <TermsStatement />
+    </div>
+  );
 };
 
 export default Terms;
