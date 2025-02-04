@@ -26,7 +26,7 @@ const ServicesGrid = () => {
               within your workflow, ensuring smooth and efficient operations.
             </li>
             <li className="mt-4 sm:mt-2 p-2 sm:p-1">
-              <a className="text-accent">In-Depth Training</a> Providing
+              <a className="text-accent">In-Depth Training:</a> Providing
               In-depth training for our technicians on the inner workings of
               servicing AMRs, keeping them updated with the latest advancements
               and repair techniques.
@@ -43,24 +43,42 @@ const ServicesGrid = () => {
             ever-evolving field of robot operations.
           </p>
         </div>
-        {/* <div className="flex justify-center items-center">
+        <div className="flex justify-center items-center py-24">
           <h3 className="text-center text-white font-bold text-6xl sm:text-6xl tracking-tighter">
-            Service Name
+            Deploy
           </h3>
         </div>
-        <div className="flex justify-center items-center">
-          <h3 className="text-center text-white font-bold text-6xl sm:text-6xl tracking-tighter">
-            Service Name
+        <div className="flex justify-start items-start flex-col">
+          <h3 className=" text-center  text-secondary lg:mt-24 font-bold text-4xl sm:text-5xl tracking-normal">
+            Seamless Integration for Optimal Performance
           </h3>
+
+          <p className=" text-start text-xl mt-8  p-4">
+            Our deployment services are designed to ensure a smooth integration
+            of AMRs into your existing operations. From initial site assessments
+            to final installation, we handle every aspect of the deployment
+            process. Our team of experts will:
+          </p>
+          <ul className="text-start  text-lg list-disc p-4 sm:p-2 sm:m-6 m-6">
+            <li className="mt-4 sm:mt-2 p-2 sm:p-1">
+              Conduct thorough site evaluations to determine the best
+              configuration for your AMRs.
+            </li>
+            <li className="mt-4 sm:mt-2 p-2 sm:p-1">
+              Install robots and hardware infrastructure with precision and
+              efficiency.
+            </li>
+            <li className="mt-4 sm:mt-2 p-2 sm:p-1">
+              Customize and configure the system to meet your specific
+              operational needs.
+            </li>
+          </ul>
+          <p className=" text-start text-xl mt-8  p-4 text-white/85">
+            By leveraging our extensive experience and technical know-how, we
+            guarantee a hassle-free deployment that sets the foundation for your
+            AMRs’ success.
+          </p>
         </div>
-        <div className="flex justify-center items-center">
-          <h3 className="text-center text-white font-bold text-6xl sm:text-6xl tracking-tighter">
-            Service Name
-          </h3>
-        </div>
-        <div className="flex justify-center items-center">
-          <p>Image</p>
-        </div> */}
       </div>
     </div>
   );
