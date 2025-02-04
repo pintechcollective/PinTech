@@ -22,7 +22,7 @@ const Gallery = () => {
     <div className="bg-black overflow-hidden">
       <div className="flex py-[72px] justify-evenly items-center max-w-screen-lg mx-auto px-4  flex-wrap-reverse ">
         <h2 className="text-center text-white font-bold text-5xl sm:text-6xl tracking-normal">
-          Reliable Technology
+          State-of-the-Art Automation
         </h2>
       </div>
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 lg:auto-rows-[600px] md:grid-cols-2 md:auto-rows-[250px]">

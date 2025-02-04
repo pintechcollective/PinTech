@@ -51,6 +51,11 @@ const Footer = () => {
                   Who We Are
                 </p>
               </Link>
+              <Link href={'/pages/services'}>
+                <p className="text-gray-600 transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:cursor-pointer hover:text-blue-500">
+                  Services
+                </p>
+              </Link>
               <Link href={'/pages/terms'}>
                 <p className="text-gray-600 transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:cursor-pointer hover:text-blue-500">
                   Our Terms of Service

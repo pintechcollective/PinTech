@@ -55,7 +55,15 @@ const FAQs = () => {
         onClick={() => setIsOpen(!isOpen)}
       >
         <div className="flex items-center">
-          <span className="flex-1 text-lg font-bold">{questions}</span>
+          <span
+            className={
+              isOpen
+                ? 'flex-1 text-lg font-bold text-accent'
+                : 'flex-1 text-lg font-bold text-white'
+            }
+          >
+            {questions}
+          </span>
           {!isOpen ? <IoMdAdd /> : <RiSubtractFill />}
         </div>
         <AnimatePresence>

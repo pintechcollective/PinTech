@@ -181,7 +181,7 @@ const Header = () => {
                   '/pages/services'
                 )}`}
               >
-                Solutions
+                Services
               </Link>
             </nav>
           </div>
