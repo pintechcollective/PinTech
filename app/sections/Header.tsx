@@ -84,6 +84,15 @@ const Header = () => {
                     className="flex justify-center items-center flex-col gap-8 w-full"
                   >
                     <Link
+                      href={'/'}
+                      className={`text-foreground ${isActive(
+                        '/pages/privacy'
+                      )}`}
+                      onClick={() => setOpen(!isOpen)}
+                    >
+                      Home
+                    </Link>
+                    <Link
                       href={'/pages/about'}
                       className={`text-foreground ${isActive(
                         '/pages/about'
@@ -101,7 +110,7 @@ const Header = () => {
                     >
                       Services
                     </Link>
-                    <Link
+                    {/* <Link
                       href={'/pages/privacy'}
                       className={`text-foreground ${isActive(
                         '/pages/privacy'
@@ -109,7 +118,7 @@ const Header = () => {
                       onClick={() => setOpen(!isOpen)}
                     >
                       Privacy
-                    </Link>
+                    </Link> */}
                     <Link
                       href={'/pages/contact'}
                       className={`text-foreground ${isActive(
