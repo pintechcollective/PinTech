@@ -75,6 +75,28 @@ const ServicesAccordion = () => {
             'Access to a dedicated support team for troubleshooting and technical assistance.',
         },
       ],
+      types: [
+        {
+          title: 'Preventative Maintenance:',
+          description:
+            'PinTech will take care of routine preventative maintenance on a schedule that best suits your robots to avoid downtime and breaks. This service typically includes an overall physical inspection and greasing of any components like casters.',
+        },
+        {
+          title: 'Robot Deployment:',
+          description:
+            'Deployment services ranging from receiving robot shipment, setup, programming for service, and launch at the site.',
+        },
+        {
+          title: 'Emergency Break-Fix Services:',
+          description:
+            'Robots break unexpectedly. We will respond to emergency breaks and quickly fix them to maximize uptime and remain within SLAs.',
+        },
+        {
+          title: 'Non-Emergency Site Visits/Repairs:',
+          description:
+            'An option between preventative maintenance and emergency break-fix services. Non-critical repairs that are needed outside of preventative maintenance and emergency break-fixes.',
+        },
+      ],
       commitment:
         'With our maintenance services, you can rely on your robots to perform consistently, allowing you to focus on your core business activities.',
     },
@@ -85,12 +107,19 @@ const ServicesAccordion = () => {
     section,
     text,
     details,
+    commitment,
+    types,
   }: {
     id: number;
     section: string;
     text?: string;
     details?: {
       purpose?: string;
+      description: string;
+    }[];
+    commitment: string;
+    types?: {
+      title: string;
       description: string;
     }[];
   }) => {
@@ -106,7 +135,7 @@ const ServicesAccordion = () => {
             className={
               !isOpen
                 ? 'text-white flex-1 text-lg font-bold'
-                : 'flex-1 text-lg font-bold text-accent'
+                : 'flex-1 text-lg font-bold text-secondary'
             }
           >
             {section}
@@ -123,11 +152,30 @@ const ServicesAccordion = () => {
               {text && <p>{text}</p>}
               {details &&
                 details.map((detail, index) => (
-                  <div key={index}>
-                    <strong className="text-accent">{detail.purpose}:</strong>{' '}
+                  <ul
+                    className="text-start  text-lg list-disc p-4 sm:p-2 sm:m-6 m-6"
+                    key={index}
+                  >
+                    <li className="mt-4 sm:mt-2 p-2 sm:p-1 text-accent">
+                      {detail.purpose}:
+                    </li>{' '}
                     {detail.description}
-                  </div>
+                  </ul>
                 ))}
+              <div className="flex flex-col md:flex-row lg:flex-row flex-wrap justify-center gap-6 ">
+                {types &&
+                  types.map((type, index) => (
+                    <div
+                      className="border border-white/30 px-5 py-10 text-center rounded-xl flex-1 sm:max-w-sm relative flex-row "
+                      key={index}
+                    >
+                      <p className="mt-4 sm:mt-2 p-2 sm:p-1 text-accent">
+                        {type.title}:
+                      </p>{' '}
+                      <p>{type.description}</p>
+                    </div>
+                  ))}
+              </div>
             </motion.div>
           )}
         </AnimatePresence>
@@ -138,27 +186,24 @@ const ServicesAccordion = () => {
   return (
     <div className="bg-black text-white py-[72px] sm:py-24">
       <div className="container p-4 max-w-screen-lg mx-auto px-4">
-        <h2 className=" font-extrabold text-center text-5xl tracking-tighter sm:text-6xl sm:max-w-[648px] mx-auto">
-          TAILORED SOLUTIONS FOR YOUR NEEDS
+        <h2 className=" text-center text-5xl tracking-tighter sm:text-6xl sm:max-w-[648px] mx-auto">
+          Services Offered
         </h2>
         {/* <p className="text-md text-white/70 m-8  text-center">
           Pinnacle Technology Collective Privacy Policy
         </p> */}
         <div className="mt-12 max-w-[648px] lg:max-w-[1000px] mx-auto ">
-          {sections.map(({ id, section, text, details }) => (
+          {sections.map(({ id, section, text, details, commitment, types }) => (
             <AccordionItem
               section={section}
+              commitment={commitment}
               text={text}
+              types={types}
               details={details}
               id={id}
               key={id}
             />
           ))}
-        </div>
-        <div>
-          <p className="text-md text-white/70 m-8  text-start">
-            Last Updated On: February 2nd, 2025
-          </p>
         </div>
       </div>
     </div>
