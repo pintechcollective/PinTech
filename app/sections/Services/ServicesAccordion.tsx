@@ -167,7 +167,7 @@ const ServicesAccordion = () => {
                 {types &&
                   types.map((type, index) => (
                     <div
-                      className="border border-white/30 px-5 py-10 text-center rounded-xl flex-1 sm:max-w-sm relative flex-row "
+                      className="border border-secondary/30 px-5 py-10 text-center rounded-xl flex-1 sm:max-w-sm relative flex-row "
                       key={index}
                     >
                       <p className="mt-4 sm:mt-2 p-2 sm:p-1 text-accent">
@@ -186,15 +186,20 @@ const ServicesAccordion = () => {
   };
 
   return (
-    <div className="bg-black text-white py-[72px] sm:py-24">
+    <div className="bg-black text-white pt-[72px] sm:pt-24">
       <div className="container p-4 max-w-screen-lg mx-auto px-4">
-        <h2 className=" text-center text-5xl tracking-tighter sm:text-6xl sm:max-w-[648px] mx-auto">
-          Services Offered
-        </h2>
+        <div className="flex justify-center flex-col lg:items-center items-start lg:text-center  text-start p-4 ">
+          <h2 className=" font-extrabold text-start text-3xl tracking-tighter sm:text-4xl  text-secondary">
+            Solutions
+          </h2>
+          <h1 className=" font-extrabold text-start text-2xl tracking-tighter sm:text-4xl ">
+            TAILORED SOLUTIONS FOR YOUR NEEDS
+          </h1>
+        </div>
         {/* <p className="text-md text-white/70 m-8  text-center">
           Pinnacle Technology Collective Privacy Policy
         </p> */}
-        <div className="mt-12 max-w-[648px] lg:max-w-[1000px] mx-auto ">
+        <div className="mt-12 max-w-[648px] lg:max-w-[4000px] mx-auto ">
           {sections.map(({ id, section, text, details, commitment, types }) => (
             <AccordionItem
               section={section}

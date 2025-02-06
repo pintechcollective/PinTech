@@ -1,16 +1,8 @@
 import React from 'react';
-import Image from 'next/image';
-
-import Robot2 from '@/public/Mock Bot 2.png';
 const CallToAction = () => {
   return (
     <div className="bg-gradient-to-b from-black to-accent/25 text-white py-[72px] sm:py-24 text-center">
       <div className="container max-w-screen-lg mx-auto">
-        <Image
-          src={Robot2}
-          className="absolute -top-[120px] right-[calc(100%+24px)]"
-          alt="Robot2"
-        />
         <h2 className="font-bold text-5xl tracking-tighter sm:text-6xl">
           Get More Information Now
         </h2>
