@@ -1,5 +1,7 @@
+'use client';
 import React from 'react';
 import Card from './Card';
+import { motion } from 'framer-motion';
 const Cards = () => {
   const solutions = [
     {
@@ -33,13 +35,14 @@ const Cards = () => {
       </div> */}
       <div className="flex flex-wrap justify-evenly ">
         {solutions.map(({ id, title, statement, image }) => (
-          <Card
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 2 }}
             key={id}
-            id={id}
-            title={title}
-            statement={statement}
-            image={image}
-          />
+          >
+            <Card id={id} title={title} statement={statement} image={image} />
+          </motion.div>
         ))}
       </div>
     </div>

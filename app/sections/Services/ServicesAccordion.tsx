@@ -163,7 +163,7 @@ const ServicesAccordion = () => {
                     {detail.description}
                   </ul>
                 ))}
-              <div className="flex flex-col md:flex-row lg:flex-row flex-wrap justify-center gap-6 ">
+              <div className="flex flex-col md:flex-row lg:flex-row flex-wrap justify-center gap-6 items-center">
                 {types &&
                   types.map((type, index) => (
                     <div
