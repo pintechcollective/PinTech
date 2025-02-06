@@ -150,6 +150,7 @@ const ServicesAccordion = () => {
               exit={{ opacity: 0, height: 0, marginTop: 0 }}
             >
               {text && <p>{text}</p>}
+
               {details &&
                 details.map((detail, index) => (
                   <ul
@@ -175,6 +176,7 @@ const ServicesAccordion = () => {
                       <p>{type.description}</p>
                     </div>
                   ))}
+                {commitment && <p className="mt-4">{commitment}</p>}
               </div>
             </motion.div>
           )}
