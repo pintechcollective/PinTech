@@ -25,7 +25,7 @@ const Gallery = () => {
           State-of-the-Art Automation
         </h2>
       </div>
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 lg:auto-rows-[600px] md:grid-cols-2 md:auto-rows-[250px]">
+      <div className="grid grid-cols-1 lg:grid-cols-3  gap-4 lg:auto-rows-[600px] md:grid-cols-2 md:auto-rows-[250px] ">
         {images.map(({ id, alt, src }) => (
           <Image
             src={src}
