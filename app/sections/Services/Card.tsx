@@ -13,7 +13,7 @@ const Card = ({
 }) => {
   return (
     <article
-      className="relative shadow-md shadow-accent isolate flex flex-col lg:w-[500px] lg:h-[500px] w-[400px] h-[400px] justify-end overflow-hidden rounded-2xl px-8 pb-8 pt-40 max-w-auto mx-[24px] lg:mx-auto m-10"
+      className="relative shadow-md shadow-accent isolate flex flex-col lg:w-[500px] lg:h-[500px] w-[300px] h-[300px] justify-end overflow-hidden rounded-2xl px-8 pb-8 pt-40 max-w-auto mx-auto m-10"
       key={id}
     >
       <Image
