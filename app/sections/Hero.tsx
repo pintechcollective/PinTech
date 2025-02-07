@@ -12,14 +12,14 @@ const Hero = () => {
   return (
     <div className=" bg-black text-white bg-[linear-gradient(to_bottom,#000,#06276d_34%,#0e83fe_52%,#9cd633_98%)] py-[72px] sm:py-24 relative overflow-clip ">
       <motion.div
-        className="absolute top-32 lg:top-44 inset-0 flex items-center justify-center opacity-30"
+        className="absolute top-60 lg:top-36 inset-0 flex items-center justify-center opacity-30"
         initial={{
           opacity: 0,
         }}
         whileInView={{
-          opacity: 0.1,
+          opacity: 0.3,
         }}
-        transition={{ duration: 3 }}
+        transition={{ duration: 5 }}
       >
         <Image
           src={Logo2}
