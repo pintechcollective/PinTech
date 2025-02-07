@@ -13,7 +13,7 @@ const Card = ({
 }) => {
   return (
     <article
-      className="relative shadow-md shadow-accent isolate flex flex-col lg:w-[500px] lg:h-[500px] w-[400px] h-[400px] justify-end overflow-hidden rounded-2xl px-8 pb-8 pt-40 max-w-auto mx-auto mt-24"
+      className="relative shadow-md shadow-accent isolate flex flex-col lg:w-[500px] lg:h-[500px] w-[400px] h-[400px] justify-end overflow-hidden rounded-2xl px-8 pb-8 pt-40 max-w-auto mx-auto mt-20"
       key={id}
     >
       <Image
@@ -26,7 +26,7 @@ const Card = ({
       <div className="absolute inset-0 bg-gradient-to-t from-secondary/40 via-secondary/10"></div>
       <h1 className="z-10 mt-3 text-3xl font-bold text-white">{title}</h1>
       {statement && (
-        <div className="z-10 gap-y-1 overflow-hidden text-lg leading-6 text-gray-300">
+        <div className="z-10 gap-y-1 overflow-hidden text-lg leading-6 text-white/90">
           {statement}
         </div>
       )}

@@ -3,7 +3,7 @@ import React from 'react';
 import { IoMdAdd } from 'react-icons/io';
 import { RiSubtractFill } from 'react-icons/ri';
 import { motion, AnimatePresence } from 'framer-motion';
-
+import Card from './Card';
 const ServicesAccordion = () => {
   const sections = [
     {
@@ -102,6 +102,27 @@ const ServicesAccordion = () => {
     },
   ];
 
+  const solutions = [
+    {
+      id: 1,
+      title: 'Train',
+      statement: 'Empowering success for your team and ours',
+      image: '/robots/Mock bot Small 2.jpg',
+    },
+    {
+      id: 2,
+      title: 'Deploy',
+      statement: '',
+      image: '/robots/Mock Bot 1.jpg',
+    },
+    {
+      id: 3,
+      title: 'Maintain',
+      statement: '',
+      image: '/robots/Mock bot Small 3.jpg',
+    },
+  ];
+
   const AccordionItem = ({
     id,
     section,
@@ -125,62 +146,83 @@ const ServicesAccordion = () => {
   }) => {
     const [isOpen, setIsOpen] = React.useState(false);
     return (
-      <div
-        key={id}
-        className="py-7 border-b border-secondary/30 "
-        onClick={() => setIsOpen(!isOpen)}
-      >
-        <div className="flex items-center">
-          <span
-            className={
-              !isOpen
-                ? 'text-white flex-1 text-lg font-bold'
-                : 'flex-1 text-lg font-bold text-secondary'
-            }
-          >
-            {section}
-          </span>
-          {!isOpen ? <IoMdAdd /> : <RiSubtractFill />}
+      <div>
+        <div className="flex flex-wrap justify-evenly ">
+          {solutions
+            .filter((solution) => solution.title === section)
+            .map(({ id, title, statement, image }) => (
+              <motion.div
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                transition={{ duration: 2 }}
+                key={id}
+              >
+                <Card
+                  id={id}
+                  title={title}
+                  statement={statement}
+                  image={image}
+                />
+              </motion.div>
+            ))}
         </div>
-        <AnimatePresence>
-          {isOpen && (
-            <motion.div
-              initial={{ opacity: 0, height: 0, marginTop: 0 }}
-              animate={{ opacity: 1, height: 'auto', marginTop: '16px' }}
-              exit={{ opacity: 0, height: 0, marginTop: 0 }}
+        <div
+          key={id}
+          className="py-7 border-b border-secondary/30 "
+          onClick={() => setIsOpen(!isOpen)}
+        >
+          <div className="flex items-center">
+            <span
+              className={
+                !isOpen
+                  ? 'text-white flex-1 text-lg font-bold'
+                  : 'flex-1 text-lg font-bold text-secondary'
+              }
             >
-              {text && <p>{text}</p>}
+              {section}
+            </span>
+            {!isOpen ? <IoMdAdd /> : <RiSubtractFill />}
+          </div>
+          <AnimatePresence>
+            {isOpen && (
+              <motion.div
+                initial={{ opacity: 0, height: 0, marginTop: 0 }}
+                animate={{ opacity: 1, height: 'auto', marginTop: '16px' }}
+                exit={{ opacity: 0, height: 0, marginTop: 0 }}
+              >
+                {text && <p>{text}</p>}
 
-              {details &&
-                details.map((detail, index) => (
-                  <ul
-                    className="text-start  text-lg list-disc p-4 sm:p-2 sm:m-6 m-6"
-                    key={index}
-                  >
-                    <li className="mt-4 sm:mt-2 p-2 sm:p-1 text-accent">
-                      {detail.purpose}:
-                    </li>{' '}
-                    {detail.description}
-                  </ul>
-                ))}
-              <div className="flex flex-col md:flex-row lg:flex-row flex-wrap justify-center gap-6 items-center">
-                {types &&
-                  types.map((type, index) => (
-                    <div
-                      className="border border-secondary/30 px-5 py-10 text-center rounded-xl flex-1 sm:max-w-sm relative flex-row "
+                {details &&
+                  details.map((detail, index) => (
+                    <ul
+                      className="text-start  text-lg list-disc p-4 sm:p-2 sm:m-6 m-6"
                       key={index}
                     >
-                      <p className="mt-4 sm:mt-2 p-2 sm:p-1 text-accent">
-                        {type.title}:
-                      </p>{' '}
-                      <p>{type.description}</p>
-                    </div>
+                      <li className="mt-4 sm:mt-2 p-2 sm:p-1 text-accent">
+                        {detail.purpose}:
+                      </li>{' '}
+                      {detail.description}
+                    </ul>
                   ))}
-                {commitment && <p className="mt-4">{commitment}</p>}
-              </div>
-            </motion.div>
-          )}
-        </AnimatePresence>
+                <div className="flex flex-col md:flex-row lg:flex-row flex-wrap justify-center gap-6 items-center">
+                  {types &&
+                    types.map((type, index) => (
+                      <div
+                        className="border border-secondary/30 px-5 py-10 text-center rounded-xl flex-1 sm:max-w-sm relative flex-row "
+                        key={index}
+                      >
+                        <p className="mt-4 sm:mt-2 p-2 sm:p-1 text-accent">
+                          {type.title}:
+                        </p>{' '}
+                        <p>{type.description}</p>
+                      </div>
+                    ))}
+                  {commitment && <p className="mt-4">{commitment}</p>}
+                </div>
+              </motion.div>
+            )}
+          </AnimatePresence>
+        </div>
       </div>
     );
   };
@@ -192,13 +234,10 @@ const ServicesAccordion = () => {
           <h2 className=" font-extrabold text-start text-3xl tracking-tighter sm:text-4xl  text-secondary">
             Solutions
           </h2>
-          <h1 className=" font-extrabold text-start text-2xl tracking-tighter sm:text-4xl ">
+          <h1 className=" font-extrabold lg:text-center text-start text-2xl tracking-tighter sm:text-4xl ">
             TAILORED SOLUTIONS FOR YOUR NEEDS
           </h1>
         </div>
-        {/* <p className="text-md text-white/70 m-8  text-center">
-          Pinnacle Technology Collective Privacy Policy
-        </p> */}
         <div className="mt-12 max-w-[648px] lg:max-w-[4000px] mx-auto ">
           {sections.map(({ id, section, text, details, commitment, types }) => (
             <AccordionItem

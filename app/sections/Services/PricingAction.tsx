@@ -4,7 +4,7 @@ const PricingAction = () => {
   return (
     <div className="bg-gradient-to-b from-black to-secondary/25 text-white py-[72px] sm:py-24 text-center">
       <div className="container max-w-screen-lg mx-auto">
-        <h2 className="font-bold text-5xl tracking-tighter sm:text-6xl">
+        <h2 className="font-bold text-5xl tracking-tighter sm:text-6xl p-2">
           Fully customizable and tailored pricing for your exact needs
         </h2>
         <p className="text-xl text-white/70 mt-5"></p>
