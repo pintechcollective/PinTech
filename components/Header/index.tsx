@@ -147,7 +147,7 @@ const Header = () => {
                 href={'/pages/about'}
                 className={`text-foreground ${isActive('/pages/about')}`}
               >
-                About
+                Testing 
               </Link>
               <div>
                 <div

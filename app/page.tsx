@@ -3,10 +3,10 @@ import CallToAction from './sections/CallToAction';
 import FAQs from './sections/FAQs';
 import Features from './sections/Features';
 import Testimonials from './sections/Testimonials';
-import Hero from './sections/Hero';
+import Hero from '@/components/Hero';
 import LogoTicker from './sections/LogoTicker';
 import ProductShowCase from './sections/ProductShowCase';
-import RobotArmSection from './sections/RobotArmSection';
+import RobotArmSection from '@/components/RobotArm';
 export default function Home() {
   return (
     <>
