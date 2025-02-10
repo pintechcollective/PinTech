@@ -24,7 +24,7 @@ const Cards = () => {
     },
   ];
   return (
-    <div className="bg-black text-white py-[24px] sm:py-4">
+    <div className="hidden sm:block bg-black text-white py-[24px] sm:py-4 ">
       {/* <div className="flex justify-center flex-col lg:items-center items-start lg:text-center  text-start p-4 ">
         <h2 className=" font-extrabold text-start text-3xl tracking-tighter sm:text-4xl  text-secondary">
           Solutions

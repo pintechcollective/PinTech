@@ -156,6 +156,7 @@ const ServicesAccordion = () => {
                 whileInView={{ opacity: 1 }}
                 transition={{ duration: 2 }}
                 key={id}
+                className="block sm:hidden"
               >
                 <Card
                   id={id}
