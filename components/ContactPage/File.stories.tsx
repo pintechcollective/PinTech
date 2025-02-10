@@ -1,15 +1,15 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import Header from '.';
+import Form from '.';
 
 const meta = {
-  title: 'Components/Header',
-  component: Header,
+  title: 'Components/ContactPage/Form',
+  component: Form,
   tags: ['autodocs'],
   parameters: {
     layout: 'fullscreen',
   },
   args: {},
-} satisfies Meta<typeof Header>;
+} satisfies Meta<typeof Form>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;

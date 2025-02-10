@@ -1,23 +1,21 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import Card from '.';
 
-
 const meta = {
-  title: 'Components/ServicesPage/Cards/Card/Card',
+  title: 'Components/ServicesPage/Cards/Card',
   component: Card,
   tags: ['autodocs'],
   parameters: {
     layout: 'fullscreen',
   },
-  args: {
-  },
+  args: {},
 } satisfies Meta<typeof Card>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Train: Story = {
-  args:     {
+  args: {
     id: 1,
     title: 'Train',
     statement: 'Empowering success for your team and ours',
@@ -25,19 +23,18 @@ export const Train: Story = {
   },
 };
 export const Deploy: Story = {
-    args:
-    {
-        id: 2,
-        title: 'Deploy',
-        statement: '',
-        image: '/robots/Mock Bot 1.jpg',
-      }
-  };
-  export const Maintain: Story = {
-    args:      {
-        id: 3,
-        title: 'Maintain',
-        statement: '',
-        image: '/robots/Mock bot Small 3.jpg',
-      }
-  };
+  args: {
+    id: 2,
+    title: 'Deploy',
+    statement: '',
+    image: '/robots/Mock Bot 1.jpg',
+  },
+};
+export const Maintain: Story = {
+  args: {
+    id: 3,
+    title: 'Maintain',
+    statement: '',
+    image: '/robots/Mock bot Small 3.jpg',
+  },
+};
