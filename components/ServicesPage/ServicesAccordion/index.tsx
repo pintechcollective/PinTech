@@ -3,7 +3,7 @@ import React from 'react';
 import { IoMdAdd } from 'react-icons/io';
 import { RiSubtractFill } from 'react-icons/ri';
 import { motion, AnimatePresence } from 'framer-motion';
-import Card from './Card';
+import Card from '../Cards/Card';
 const ServicesAccordion = () => {
   const sections = [
     {
