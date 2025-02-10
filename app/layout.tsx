@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import './globals.css';
 import Header from '../components/Header';
-import Footer from './sections/Footer';
+import Footer from '../components/Footer';
 
 export const metadata: Metadata = {
   title: 'Pintech | Innovative Robotic Automation Solutions',

@@ -1,12 +1,12 @@
 import { Motion } from './sections/About/Motion';
-import CallToAction from './sections/CallToAction';
-import FAQs from './sections/FAQs';
-import Features from '@/components/Features';
+import CallToAction from '../components/LandingPage/CallToAction';
+import FAQs from '../components/LandingPage/FAQs';
+import Features from '@/components/LandingPage/Features';
 import Testimonials from './sections/Testimonials';
-import Hero from '@/components/Hero';
-import LogoTicker from './sections/LogoTicker';
-import ProductShowCase from './sections/ProductShowCase';
-import RobotArmSection from '@/components/RobotArm';
+import Hero from '@/components/LandingPage/Hero';
+import LogoTicker from '../components/LandingPage/LogoTicker';
+import ProductShowCase from '../components/LandingPage/ProductShowCase';
+import RobotArmSection from '@/components/LandingPage/RobotArm';
 export default function Home() {
   return (
     <>

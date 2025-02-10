@@ -1,17 +1,17 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import RobotArmSection from '.';
+import LogoTicker from '.';
 
 
 const meta = {
-  title: 'Components/RobotArmSection',
-  component: RobotArmSection,
+  title: 'Components/LandingPage/LogoTicker',
+  component: LogoTicker,
   tags: ['autodocs'],
   parameters: {
     layout: 'fullscreen',
   },
   args: {
   },
-} satisfies Meta<typeof RobotArmSection>;
+} satisfies Meta<typeof LogoTicker>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;
@@ -20,4 +20,3 @@ export const Default: Story = {
   args: {
   },
 };
-

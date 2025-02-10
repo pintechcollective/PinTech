@@ -1,5 +1,5 @@
 import React from 'react';
-import { Motion } from './About/Motion';
+import { Motion } from '@/app/sections/About/Motion';
 const Testimonials = () => {
   const reviews = [
     {
