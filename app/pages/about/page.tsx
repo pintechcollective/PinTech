@@ -1,6 +1,6 @@
 import React from 'react';
 import AboutHero from '@/components/AboutPage/AboutHero';
-import MeetTheTeam from '@/app/sections/About/Facts';
+import Facts from '@/components/AboutPage/Facts';
 import { Motion } from '@/app/animations/Motion';
 import Gallery from '@/components/AboutPage/Gallery';
 import ServicesButton from '@/components/AboutPage/ServicesButton';
@@ -9,7 +9,7 @@ const About = () => {
     <div>
       <Motion>
         <AboutHero />
-        <MeetTheTeam />
+        <Facts />
         <Gallery />
         <ServicesButton />
       </Motion>

@@ -255,4 +255,4 @@ const PrivacyStatement = () => {
   );
 };
 
-export default PrivacyStament;
+export default PrivacyStatement;
