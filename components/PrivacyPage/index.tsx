@@ -256,3 +256,5 @@ const PrivacyStatement = () => {
 };
 
 export default PrivacyStatement;
+
+//new
