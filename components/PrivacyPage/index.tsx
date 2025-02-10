@@ -4,7 +4,7 @@ import { IoMdAdd } from 'react-icons/io';
 import { RiSubtractFill } from 'react-icons/ri';
 import { motion, AnimatePresence } from 'framer-motion';
 
-const Statement = () => {
+const PrivacyStatement = () => {
   const sections = [
     {
       id: 1,
@@ -255,4 +255,4 @@ const Statement = () => {
   );
 };
 
-export default Statement;
+export default PrivacyStament;

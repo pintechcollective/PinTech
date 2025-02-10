@@ -1,9 +1,9 @@
 import React from 'react';
-import AboutHero from '@/app/sections/About/Hero';
+import AboutHero from '@/components/AboutPage/AboutHero';
 import MeetTheTeam from '@/app/sections/About/Facts';
-import { Motion } from '@/app/sections/About/Motion';
-import Gallery from '@/app/sections/About/Gallery';
-import ServicesButton from '@/app/sections/About/ServicesButton';
+import { Motion } from '@/app/animations/Motion';
+import Gallery from '@/components/AboutPage/Gallery';
+import ServicesButton from '@/components/AboutPage/ServicesButton';
 const About = () => {
   return (
     <div>

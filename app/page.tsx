@@ -1,4 +1,4 @@
-import { Motion } from './sections/About/Motion';
+import { Motion } from './animations/Motion';
 import CallToAction from '../components/LandingPage/CallToAction';
 import FAQs from '../components/LandingPage/FAQs';
 import Features from '@/components/LandingPage/Features';

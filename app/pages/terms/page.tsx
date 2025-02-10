@@ -1,5 +1,5 @@
 import React from 'react';
-import TermsStatement from '@/app/sections/Terms/TermsStatement';
+import TermsStatement from '@/components/TermsPage';
 const Terms = () => {
   return (
     <div>
