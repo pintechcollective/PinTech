@@ -1,0 +1,27 @@
+Questions for Client
+Questions for Client
+
+Preferred Communication Channels:
+
+How do you want clients to contact you? Email only, or are there other preferred channels?
+If email is the primary method, which specific email address should be used to receive?
+Contact Form Requirements:
+
+Aside from standard fields (e.g., first name, last name, email), are there any additional input fields you’d like included?
+Data Collection & Privacy Policy Alignment:
+
+Data Collection & Tracking
+Based on your privacy policy (Section 2: "Information We Collect"), your site intends to collect user credentials and track user actions via cookies.
+
+How do you plan to track and store this information?
+Implementing tracking technologies requires additional setup and code, which is beyond the current contract scope. Given that the company is in its early stages, are you comfortable proceeding without analytics for now, or would you be open to discussing this as a future enhancement?
+
+Tracking Technology Implementation (If Agreed Upon):
+
+If you decide to implement tracking, what technologies do you prefer?
+Would you like to explore options such as Google Analytics, Tinybird, or built-in hosting solutions that offer tracking capabilities?
+
+
+Services Section in Copy Provided
+
+For the Maintain Copy Section, would you want these services listed to be apart of the Maintenance section or be displayed as their own thing within the Services Page?,  the Services listed that are: Preventive Maintenance, Robot Deployment, Emergency Break-Fix Services, Non Emergency Site Visits/Repairs.
