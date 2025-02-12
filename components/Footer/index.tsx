@@ -146,7 +146,7 @@ const Footer = () => {
             />
           </div>
         </div>
-        <p className="font-sans text-white p-8 text-start md:text-center md:text-lg md:p-4">
+        <p className="font-sans text-white mt-4 text-start text-sm md:text-center md:text-lg md:p-4">
           © 2025 Pintech Collective Inc. All rights reserved.
         </p>
       </div>
