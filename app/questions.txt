@@ -10,7 +10,7 @@ Contact Form Requirements:
 Aside from standard fields (e.g., first name, last name, email), are there any additional input fields you’d like included?
 Data Collection & Privacy Policy Alignment:
 
-Data Collection & Tracking
+Data Collection & Tracking 
 Based on your privacy policy (Section 2: "Information We Collect"), your site intends to collect user credentials and track user actions via cookies.
 
 How do you plan to track and store this information?

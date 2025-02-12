@@ -47,7 +47,7 @@ const Header = () => {
                 alt="sas logo"
                 height={150}
                 width={150}
-                className="text-center m-4 object-cover"
+                className=" text-center object-cover"
               />
             </Link>
             <div className="relative">
