@@ -36,7 +36,7 @@ const Form = () => {
             </div>
           </div>
 
-          <form className="flex-1 max-w-md mx-auto text-white">
+          <form className="flex-1 max-w-md mx-auto text-white text-[16px]">
             <div className="flex items-start justify-center">
               <Image
                 src={Logo}
