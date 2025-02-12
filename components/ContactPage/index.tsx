@@ -5,9 +5,9 @@ const Form = () => {
   return (
     <div className="bg-black">
       <div className="flex py-[72px] justify-evenly items-center max-w-screen-lg mx-auto px-4  flex-wrap-reverse ">
-        <div className="flex flex-row justify-evenly lg:gap-72 gap-4 flex-wrap">
+        <div className="flex flex-row justify-evenly lg:gap-72 gap-4 flex-wrap-reverse">
           <div className="flex flex-col items-center">
-            <h2 className="text-center text-white font-bold text-6xl sm:text-6xl tracking-tighter">
+            <h2 className="hidden lg:block text-center text-white font-bold text-6xl sm:text-6xl tracking-tighter">
               Contact Us
             </h2>
 
