@@ -37,13 +37,13 @@ const Form = () => {
           </div>
 
           <form className="flex-1 max-w-md mx-auto text-white">
-            <div className="flex items-center justify-center">
+            <div className="flex items-start justify-center">
               <Image
                 src={Logo}
                 alt="sas logo"
                 height={150}
                 width={150}
-                className="text-center m-4 object-cover"
+                className="text-center mb-5 object-cover"
               />
             </div>
             <div className="relative z-0 w-full mb-5 group">
