@@ -19,8 +19,6 @@ const meta = {
   - Accessibility: Each image includes an alt attribute, improving accessibility for users with visual impairments.
   
 
-  Usage: 
-
   Usage:
 This component can be integrated into the About Page to highlight the company's innovative automation solutions, making it an essential part of the overall user experience.
  

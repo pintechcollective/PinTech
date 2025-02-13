@@ -24,6 +24,10 @@ const meta = {
 300+ robots serviced
 7,000+ service hours
 **
+
+Usage:
+
+Gives the potential client a insight into the experience that the company has under their belt, Reinforcing the professionalism and security in their services. 
   
   ### Code Example
           
