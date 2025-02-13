@@ -31,10 +31,6 @@ const AboutHero = () => {
             robotic solutions, ensuring optimal performance and longevity of
             their robotic assets.
           </p>
-          {/* <p className="text-xl text-white/70 text-center mt-5">
-            “Empowering robotics companies to grow faster by offloading the most
-            costly and cumbersome part of the business, fleet operations.”
-          </p> */}
         </div>
       </div>
     </div>
