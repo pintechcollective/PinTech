@@ -9,6 +9,8 @@ import Link from 'next/link';
 import { motion } from 'framer-motion';
 import MobileLogo from '@/public/icons/PT - LogoMark - BLGR.svg';
 import { usePathname } from 'next/navigation';
+import Container from '../Container';
+import AnnouncementBar from '../AnnouncementBar';
 const Header = () => {
   const [isOpen, setOpen] = useState(false);
 
@@ -26,20 +28,16 @@ const Header = () => {
   };
 
   return (
-    <header className="sticky top-0 z-20 bg-black">
-      <div className="flex gap-3 justify-center items-center py-3 bg-black text-white text-sm">
-        <p className="text-white/60 hidden md:block">
-          Automate your workflow and boost productivity
-        </p>
-        <Link href={'/pages/about'} className="text-accent hover:text-white">
-          <div className="inline-flex gap-1 items-center">
-            <p>Learn More Now</p>
-            <FaArrowRightLong className="h-4 w-4 inline-flex justify-center items-center" />
-          </div>
-        </Link>
-      </div>
-      <div className="py-5 bg-black">
-        <div className="container">
+    <header className="flex sticky top-0 z-10 flex-col bg-black py-3">
+      <AnnouncementBar/>
+      {/* Container */}
+
+      <Container>
+
+   
+     
+ 
+     
           <div className="flex items-center justify-between">
             <Link href={'/'}>
               <Image
@@ -47,14 +45,14 @@ const Header = () => {
                 alt="sas logo"
                 height={150}
                 width={150}
-                className=" m-[24px] text-center object-cover"
+                className=" text-center object-cover"
               />
             </Link>
             <div className="relative">
               <IoMenu
                 className={
                   !isOpen
-                    ? 'absolute top-[-30px] right-4 h-10 w-10 md:hidden text-white m-2'
+                    ? 'size-10 md:hidden text-white'
                     : 'hidden'
                 }
                 onClick={() => setOpen(!isOpen)}
@@ -194,8 +192,9 @@ const Header = () => {
               </Link>
             </nav>
           </div>
-        </div>
-      </div>
+     
+   
+      </Container>
     </header>
   );
 };
