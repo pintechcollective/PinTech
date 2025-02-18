@@ -9,31 +9,34 @@ const meta = {
     layout: 'fullscreen',
     docs: {
       description: {
-        component: `The Pricing Component component displays a call to action button and a short description for potential client, regarding reaching out for services.
+        component: `The FAQs Component displays an interactive accordion, listing the most commonly asked questions about the company's services along with the answers to each question.
 
 Key Features:
 - A gradient background and bold typography for visual emphasis.
 - Flexbox layout for easy alignment of elements.
-
-Copy Provided: 
-Fully customizable and tailored pricing for your exact needs.
-   Get A Quote
-**
-
-Usage:
-
-Call To action button to guide the user to the contact form page to contact Pintech for their services. 
+- Interactive accordion items that expand to reveal answers.
 
 ### Code Example
-        
-
-          \`\`\`tsx
-          import PricingSection from 'path/to/PricingSection';
-
-          \`\`\`
+\`\`\`tsx
+import FAQs from 'path/to/FAQs';
+\`\`\`
 
 ### Props:
-- No props are currently passed to this component.`,
+- No props are currently passed to this component.
+
+### Component Structure:
+- The component consists of a list of FAQ items, each containing a question and an answer.
+- Each FAQ item can be expanded or collapsed by clicking on it, utilizing animations for a smooth user experience.
+
+### FAQ Items:
+- Each FAQ item is represented by an object containing:
+  - **id**: A unique identifier for the FAQ item.
+  - **questions**: The question text.
+  - **answers**: The answer text.
+
+Usage:
+Helps deliver imporant impoation and answers to most common questions that potential clients may have regaridng the service. 
+`,
       },
     },
   },
