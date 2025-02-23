@@ -176,8 +176,8 @@ const ServicesAccordion = () => {
             <span
               className={
                 !isOpen
-                  ? 'text-white flex-1 text-lg font-bold'
-                  : 'flex-1 text-lg font-bold text-secondary'
+                  ? 'text-white flex-1 text-4xl sm:text-6xl font-bold font-Headings'
+                  : 'flex-1  text-4xl sm:text-6xl font-bold text-secondary font-Headings'
               }
             >
               {section}
@@ -231,13 +231,13 @@ const ServicesAccordion = () => {
   return (
     <div className="bg-black text-white pt-[72px] sm:pt-14">
       <div className="container p-4 max-w-screen-lg mx-auto px-4">
-        <div className="lg:hidden flex justify-center flex-col lg:items-center items-start lg:text-center  text-start p-4 ">
-          <h2 className=" font-extrabold text-start text-3xl tracking-tighter sm:text-4xl  text-secondary">
+        <div className=" flex justify-center flex-col lg:items-center items-start lg:text-center  text-start p-4 ">
+          <h2 className=" font-extrabold text-start text-6xl tracking-tighter   text-secondary">
             Solutions
           </h2>
-          <h1 className=" font-extrabold lg:text-center text-start text-2xl tracking-tighter sm:text-4xl ">
-            TAILORED SOLUTIONS FOR YOUR NEEDS
-          </h1>
+          <h2 className=" font-extrabold lg:text-center text-start text-2xl tracking-tighter sm:text-xl ">
+            Tailored Solutions For Your Needs
+          </h2>
         </div>
         <div className="mt-12 max-w-[648px] lg:max-w-[4000px] mx-auto ">
           {sections.map(({ id, section, text, details, commitment, types }) => (

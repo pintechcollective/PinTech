@@ -9,8 +9,8 @@ const Services = () => {
     <div>
       <Motion>
         {/* <ServicesGrid /> */}
-        <Cards />
         <ServicesAccordion />
+        <Cards />
         <PricingAction />
       </Motion>
     </div>
