@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 const CallToAction = () => {
   return (
     <div className="bg-gradient-to-b from-black to-accent/25 text-white py-[72px] sm:py-24 text-center">
@@ -13,9 +14,12 @@ const CallToAction = () => {
             placeholder="your@email.com"
             className="h-12 bg-white/20 rounded-lg px-5 font-medium placeholder:text-[#9cd633] sm:flex-1"
           ></input> */}
-          <button className="bg-secondary text-center text-black clip-diagonal font-medium px-5 py-2 w-[150px] ">
-            Get Access
-          </button>
+          <Link
+            href={'/pages/services'}
+            className="bg-secondary text-center text-black clip-diagonal font-medium px-5 py-2 w-[150px] "
+          >
+            Services
+          </Link>
         </form>
       </div>
     </div>
