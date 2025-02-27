@@ -7,6 +7,14 @@ import Hero from '@/components/LandingPage/Hero';
 import LogoTicker from '../components/LandingPage/LogoTicker';
 import ProductShowCase from '../components/LandingPage/ProductShowCase';
 import RobotArmSection from '@/components/LandingPage/RobotArm';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Pintech | HomePage | Innovative Robotic Automation Solutions',
+  description:
+    'Pintech specializes in cutting-edge robotic automation systems, revolutionizing industries with advanced technology and efficient solutions.',
+};
+
 export default function Home() {
   return (
     <>
