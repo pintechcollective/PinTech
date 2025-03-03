@@ -21,7 +21,6 @@ export const metadata: Metadata = {
     'Technology Solutions',
     'Innovation',
   ],
-  author: 'Pinnacle Technology Collective',
   openGraph: {
     title: 'Home - Pinnacle Technology Collective',
     description:
