@@ -9,10 +9,34 @@ import ProductShowCase from '../components/LandingPage/ProductShowCase';
 import RobotArmSection from '@/components/LandingPage/RobotArm';
 import { Metadata } from 'next';
 
-export const metadata: Metadata = {
-  title: 'Pintech | HomePage | Innovative Robotic Automation Solutions',
+export const metadata = {
+  title: 'Home - Pinnacle Technology Collective',
   description:
-    'Pintech specializes in cutting-edge robotic automation systems, revolutionizing industries with advanced technology and efficient solutions.',
+    'Welcome to Pinnacle Technology Collective, your partner in robotics and automation solutions. Discover our mission, services, and the team dedicated to innovation and excellence.',
+  keywords: [
+    'Home',
+    'Pinnacle Technology Collective',
+    'Robotics',
+    'Automation',
+    'Technology Solutions',
+    'Innovation',
+  ],
+  author: 'Pinnacle Technology Collective',
+  openGraph: {
+    title: 'Home - Pinnacle Technology Collective',
+    description:
+      'Explore Pinnacle Technology Collective, where we provide cutting-edge robotics and automation solutions tailored to your needs.',
+    url: 'https://yourcompany.com',
+    type: 'website',
+    images: [
+      {
+        url: '/icons/PT - LogoMark - DBLBL.svg',
+        width: 800,
+        height: 600,
+        alt: 'Pinnacle Technology Collective Logo',
+      },
+    ],
+  },
 };
 
 export default function Home() {
