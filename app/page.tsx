@@ -9,7 +9,7 @@ import ProductShowCase from '../components/LandingPage/ProductShowCase';
 import RobotArmSection from '@/components/LandingPage/RobotArm';
 import { Metadata } from 'next';
 
-export const metadata = {
+export const metadata: Metadata = {
   title: 'Home - Pinnacle Technology Collective',
   description:
     'Welcome to Pinnacle Technology Collective, your partner in robotics and automation solutions. Discover our mission, services, and the team dedicated to innovation and excellence.',
