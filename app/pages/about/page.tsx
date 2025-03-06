@@ -26,8 +26,8 @@ export const metadata = {
     images: [
       {
         url: '/icons/PT - WORDMARK TM - BLUE.svg',
-        width: 50,
-        height: 50,
+        width: 300,
+        height: 35,
         alt: 'Pinnacle Technology Collective Logo',
       },
     ],
