@@ -1,10 +1,9 @@
 import React from 'react';
 import AboutHero from '@/components/AboutPage/AboutHero';
-import Facts from '@/components/AboutPage/Facts'
+import Facts from '@/components/AboutPage/Facts';
 import { Motion } from '@/app/animations/Motion';
 import Gallery from '@/components/AboutPage/Gallery';
 import ServicesButton from '@/components/AboutPage/ServicesButton';
-
 
 export const metadata = {
   title: 'About Us - Pinnacle Technology Collective',
@@ -26,22 +25,21 @@ export const metadata = {
     type: 'website',
     images: [
       {
-        url: '/icons/PT - LogoMark - DBLBL.svg',
-        width: 800,
-        height: 600,
+        url: '/icons/PT - WORDMARK TM - BLUE.svg',
+        width: 200,
+        height: 400,
         alt: 'Pinnacle Technology Collective Logo',
       },
     ],
   },
 };
 
-
 const About = () => {
   return (
     <div>
       <Motion>
         <AboutHero />
-        <Facts/>
+        <Facts />
         <Gallery />
         <ServicesButton />
       </Motion>
