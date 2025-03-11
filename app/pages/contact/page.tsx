@@ -1,5 +1,5 @@
 import React from 'react';
-import Form from '@/components/ContactPage';
+// import Form from '@/components/ContactPage';
 import { Motion } from '@/app/animations/Motion';
 import CalendlyWidget from '@/components/CalendlyLink';
 
