@@ -1,6 +1,8 @@
 import React from 'react';
 import Form from '@/components/ContactPage';
 import { Motion } from '@/app/animations/Motion';
+import CalendlyWidget from '@/components/CalendlyLink';
+
 export const metadata = {
   title: 'Contact Us - Pintech',
   description:
@@ -29,11 +31,17 @@ export const metadata = {
     ],
   },
 };
+
 const Contact = () => {
   return (
     <div>
       <Motion>
-        <Form />
+        {/* <Form /> */}
+        <CalendlyWidget
+          url="https://calendly.com/oscarleal234/30min?hide_event_type_details=1&hide_gdpr_banner=1"
+          height={700}
+          minWidth={320}
+        />
       </Motion>
     </div>
   );
