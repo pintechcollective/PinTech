@@ -26,7 +26,7 @@ useEffect(()=>{
 const timeout= setTimeout(()=>setMounted(true),10)
 animate()
 return ()=>clearTimeout(timeout)
-}, [])
+}, [isMounted])
     
   return (
     <BackgroundVideo src={mockVideo} id="video" className=" w-screen h-screen object-cover">
