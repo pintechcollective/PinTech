@@ -17,7 +17,7 @@ const animate=()=>{
     loader.add({
         targets: "#video",
         delay:0,
-        scale:3,
+        scale:0,
         duration:7000,
         easing: "easeInOutExpo"
     })

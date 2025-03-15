@@ -6,6 +6,7 @@ import Footer from '../components/Footer';
 import Video from '@/components/Video';
 import { usePathname } from 'next/navigation';
 import { useState,useEffect } from 'react';
+import Head from 'next/head';
 
 // export const metadata: Metadata = {
 //   title: 'Pintech | Innovative Robotic Automation Solutions',
@@ -32,6 +33,14 @@ export default function RootLayout({
   }, [isLoading])
   return (
     <html lang="en">
+      <head>
+        <Head>
+          <title>Pintech | Innovative Robotic Automation Solutions</title>
+          <meta name="description" content="Pintech specializes in cutting-edge robotic automation systems, revolutionizing industries with advanced technology and efficient solutions." />
+          <meta name="keywords" content="robotic automation, industrial robots, automation systems, robotics technology, Pintech solutions" />
+          <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        </Head>
+      </head>
       <body className="font-ClashDisplay antialiased">
         {isLoading && isHome ? (
           <Video finishLoading={()=>setIsLoading(false)}/>
