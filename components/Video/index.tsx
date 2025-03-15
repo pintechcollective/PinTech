@@ -1,10 +1,8 @@
 'use client'
-import Image from 'next/image';
 import anime from 'animejs';
 import BackgroundVideo from 'next-video/background-video';
-import getStarted from '/videos/get-started.mp4.json';
 import mockVideo from '/videos/MockLoadInLogo.mp4.json';
-import { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 interface VideoProps {
   finishLoading: () => void;
 }

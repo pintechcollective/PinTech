@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react'
+import React from 'react'
 import { Motion } from './animations/Motion';
 import CallToAction from '../components/LandingPage/CallToAction';
 import FAQs from '../components/LandingPage/FAQs';
@@ -8,7 +8,6 @@ import Hero from '@/components/LandingPage/Hero';
 import LogoTicker from '../components/LandingPage/LogoTicker';
 import ProductShowCase from '../components/LandingPage/ProductShowCase';
 import RobotArmSection from '@/components/LandingPage/RobotArm';
-import Video from '@/components/Video';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
