@@ -29,7 +29,7 @@ return ()=>clearTimeout(timeout)
 }, [isMounted])
     
   return (
-    <BackgroundVideo src={mockVideo} id="video" className=" w-screen h-screen object-cover">
+    <BackgroundVideo src={mockVideo} id="video" className="fixed top-0 bottom-0 w-screen h-screen object-cover">
     </BackgroundVideo>
   );
 };
