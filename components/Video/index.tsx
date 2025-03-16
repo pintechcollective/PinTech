@@ -21,7 +21,7 @@ const Video: React.FC<VideoProps> = ({ finishLoading }) => {
     loader.add({
       targets: '#video',
       delay: 0,
-      scale: 0,
+      scale: 1,
       duration: 7000,
       easing: 'easeInOutExpo',
     });
@@ -36,7 +36,7 @@ const Video: React.FC<VideoProps> = ({ finishLoading }) => {
     <BackgroundVideo
       src={mockVideo}
       id="video"
-      className="fixed top-0 left-0 w-full h-full object-contain lg:object-cover min-h-screen min-w-screen"
+      className="fixed top-0 left-0 w-full h-full object-cover min-h-screen min-w-screen bg-black"
     ></BackgroundVideo>
   );
 };
