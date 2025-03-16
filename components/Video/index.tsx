@@ -4,8 +4,8 @@ import BackgroundVideo from 'next-video/background-video';
 import mockVideo from '/videos/MockLoadInLogo.mp4.json';
 import React, { useEffect, useState } from 'react';
 // import Image from 'next/image';
-// import Logo from '@/public/icons/PT - LogoMark - DBLBL.svg';
-
+import Logo from '@/public/icons/PT - LogoMark - DBLBL.svg';
+import Logo2 from '@/public/icons/PT - LogoMark - WHGR.png';
 interface VideoProps {
   finishLoading: () => void;
 }
@@ -36,6 +36,7 @@ const Video: React.FC<VideoProps> = ({ finishLoading }) => {
     <BackgroundVideo
       src={mockVideo}
       id="video"
+      thumbnailTime={4}
       className="fixed top-0 left-0 w-full h-full object-cover min-h-screen min-w-screen bg-black"
     ></BackgroundVideo>
   );
