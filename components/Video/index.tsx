@@ -4,8 +4,8 @@ import BackgroundVideo from 'next-video/background-video';
 import mockVideo from '/videos/MockLoadInLogo.mp4.json';
 import React, { useEffect, useState } from 'react';
 // import Image from 'next/image';
-import Logo from '@/public/icons/PT - LogoMark - DBLBL.svg';
-import Logo2 from '@/public/icons/PT - LogoMark - WHGR.png';
+// import Logo from '@/public/icons/PT - LogoMark - DBLBL.svg';
+// import Logo2 from '@/public/icons/PT - LogoMark - WHGR.png';
 interface VideoProps {
   finishLoading: () => void;
 }
