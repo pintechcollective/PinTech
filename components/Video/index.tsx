@@ -36,7 +36,7 @@ const Video: React.FC<VideoProps> = ({ finishLoading }) => {
     <BackgroundVideo
       src={mockVideo}
       id="video"
-      thumbnailTime={4}
+      // thumbnailTime={4}
       className="fixed top-0 left-0 w-full h-full object-cover min-h-screen min-w-screen bg-black"
     ></BackgroundVideo>
   );
