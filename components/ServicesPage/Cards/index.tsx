@@ -7,7 +7,7 @@ const Cards = () => {
     {
       id: 1,
       title: 'Train',
-      statement: 'Empowering success for your team and ours',
+      statement: '',
       image: '/robots/Mock bot Small 2.jpg',
     },
     {

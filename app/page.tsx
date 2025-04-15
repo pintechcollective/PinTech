@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import { Motion } from './animations/Motion';
 import CallToAction from '../components/LandingPage/CallToAction';
 import FAQs from '../components/LandingPage/FAQs';
@@ -40,8 +40,6 @@ export const metadata: Metadata = {
 };
 
 export default function Home() {
-
-
   return (
     <>
       <div className="overflow-x-hidden">
@@ -49,10 +47,10 @@ export default function Home() {
           <Hero />
           <RobotArmSection />
           <Features />
-          <ProductShowCase />
-          <FAQs />
-          <Testimonials />
           <LogoTicker />
+          {/* <ProductShowCase /> */}
+          <Testimonials />
+          <FAQs />
           <CallToAction />
         </Motion>
       </div>

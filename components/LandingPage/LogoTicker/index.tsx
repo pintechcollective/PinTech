@@ -21,7 +21,7 @@ const images = [
 const LogoTicker = () => {
   return (
     <div className="bg-black text-white py-12">
-      <div className="container max-w-screen-lg mx-auto px-4">
+      <div className="container w-screen mx-auto px-4">
         {/* <h2 className="text-lg text-center text-white/70">
         Empowering robotics companies to grow faster by offloading the most costly and cumbersome part of the business, fleet operations.
         </h2> */}

@@ -27,7 +27,7 @@ const Card = ({
       <h1 className="z-10 mt-3 text-3xl font-bold text-white">{title}</h1>
       {statement && (
         <div className="z-10 gap-y-1 overflow-hidden text-lg leading-6 text-white/90">
-          {statement}
+          {/* {statement} */}
         </div>
       )}
     </article>

@@ -5,13 +5,13 @@ const Testimonials = () => {
     {
       id: 1,
       text: 'I had the opportunity to work with the founders of Pinnacle Technology Collective during their time at Cobalt Robotics, where they were integral to running a smooth and efficient Operations and Maintenance program. By building strong teams, they ensured reliable support and had a tremendous impact on the success of the company. Im excited to see Pinnacle Technology Collective offer the same level of consistency and expertise to its clients.',
-      name: 'Sam Johnson',
+      name: 'Sam Johnson ',
       title: 'Former Director of Field Operations @ Cobalt Robotics',
     },
     {
       id: 2,
       text: 'Jeff and Chris, the Founders of Pinnacle Technology Collective, played a key role in scaling our field operations and maintenance program during their tenure at Cobalt Robotics. Their practical approach and deep understanding of robotics operations made them a valuable part of the team. Im confident that with Pinnacle Technology Collective, businesses will receive solid, dependable service and support for their robot operations.',
-      name: 'Mark Powers',
+      name: 'Mark Powers ',
       title:
         'Former Director of Senior VP of Operations and Maintenance @ Cobalt Robotics',
     },
@@ -34,14 +34,20 @@ const Testimonials = () => {
             className=" px-5 py-10 text-center rounded-xl flex-1 sm:max-w-sm relative "
           >
             <Motion>
-              <div className="text-xl">
+              <div className="text-xl mb-4">
                 {'"'}
                 {text}
                 {'"'}
               </div>
               <div className="flex flex-col gap-4">
-                <p className="text-md text-accent">-{name}</p>
-                <p className="text-md text-accent">{title}</p>
+                <p className="text-md">
+                  -{`  `}
+                  <span className="text-md text-secondary">{name}</span>,{`  `}
+                  <span className="text-md text-accent">
+                    {`  `}
+                    {title}
+                  </span>
+                </p>
               </div>
             </Motion>
           </div>

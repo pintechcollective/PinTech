@@ -78,7 +78,7 @@ const Header = () => {
                   >
                     Home
                   </Link>
-                  <Link
+                  {/* <Link
                     href={'/pages/about'}
                     className={`text-foreground ${isActive(
                       '/pages/about'
@@ -86,7 +86,7 @@ const Header = () => {
                     onClick={() => setOpen(!isOpen)}
                   >
                     About
-                  </Link>
+                  </Link> */}
                   <Link
                     href={'/pages/services'}
                     className={`text-foreground ${isActive('/pages/services')}`}
@@ -125,14 +125,14 @@ const Header = () => {
             </div>
           </div>
           <nav className="hidden md:flex gap-6  text-white/90 items-center">
-            <Link
+            {/* <Link
               href={'/pages/about'}
               className={`text-foreground ${isActive('/pages/about')}`}
             >
               About
-            </Link>
-            <div>
-              <div
+            </Link> */}
+            {/* <div> */}
+            {/* <div
                 className="cursor-pointer text-foreground"
                 onClick={() => setLegalOpen(!isLegalOpen)}
               >
@@ -156,14 +156,8 @@ const Header = () => {
                   </Link>
                 </div>
               )}
-            </div>
+            </div> */}
 
-            <Link
-              href={'/pages/contact'}
-              className={`text-foreground ${isActive('/pages/contact')}`}
-            >
-              Contact Us
-            </Link>
             <Link
               href={'/pages/services'}
               className={`border-2 border-accent text-white px-4 py-2 font-medium inline-flex align-items justify-center tracking-right clip-diagonal ${isActive(
@@ -171,6 +165,12 @@ const Header = () => {
               )}`}
             >
               Services
+            </Link>
+            <Link
+              href={'/pages/contact'}
+              className={`text-foreground ${isActive('/pages/contact')}`}
+            >
+              Contact Us
             </Link>
           </nav>
         </div>

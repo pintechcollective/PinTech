@@ -31,11 +31,11 @@ const Footer = () => {
                   Home
                 </p>
               </Link>
-              <Link href={'/pages/about'}>
+              {/* <Link href={'/pages/about'}>
                 <p className="text-gray-600 transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:cursor-pointer hover:text-blue-500">
                   Who We Are
                 </p>
-              </Link>
+              </Link> */}
               <Link href={'/pages/services'}>
                 <p className="text-gray-600 transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:cursor-pointer hover:text-blue-500">
                   Services
@@ -92,7 +92,7 @@ const Footer = () => {
           </div> */}
 
           <div className="flex gap-4 hover:cursor-pointer">
-            <Image
+            {/* <Image
               src="https://www.svgrepo.com/show/303114/facebook-3-logo.svg"
               width={30}
               height={30}
@@ -122,7 +122,7 @@ const Footer = () => {
               width={30}
               height={30}
               alt="pn"
-            />
+            /> */}
             <Image
               src="https://www.svgrepo.com/show/28145/linkedin.svg"
               width={30}
