@@ -25,12 +25,12 @@ const Fact = ({
   React.useEffect(() => {
     const animateBorder = () => {
       animate(offsetX, [0, 200, 200, 0, 0], {
-        duration: 2,
+        duration: 6,
         repeat: Infinity,
         ease: 'linear',
       });
       animate(offsetY, [0, 0, 200, 200, 0], {
-        duration: 2,
+        duration: 6,
         repeat: Infinity,
         ease: 'linear',
       });

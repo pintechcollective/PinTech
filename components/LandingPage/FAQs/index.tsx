@@ -89,7 +89,7 @@ const FAQs = () => {
     );
   };
   return (
-    <div className="bg-black text-white bg-gradient-to-b from-[#0e83fe] to-black py-[72px] sm:py-24">
+    <div className="bg-black text-white bg-gradient-to-b from-[#0e83fe] to-black py-[24px] sm:py-14">
       <div className="container p-4 max-w-screen-lg mx-auto px-4">
         <h1 className="text-center text-4xl sm:text-6xl tracking-tighter sm:max-w-[648px] mx-auto">
           Frequently Asked Questions
