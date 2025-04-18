@@ -1,5 +1,6 @@
 'use client';
 import React from 'react';
+import { useState } from 'react';
 import Logo from '@/public/icons/PT - LogoLock - Dark  BG.svg';
 import Image from 'next/image';
 import { IoMenu } from 'react-icons/io5';
@@ -11,7 +12,7 @@ import { usePathname } from 'next/navigation';
 import Container from '../Container';
 import AnnouncementBar from '../AnnouncementBar';
 const Header = () => {
-  // const [isOpen, setOpen] = useState(false);
+  const [isOpen, setOpen] = useState(false);
 
   // const [isLegalOpen, setLegalOpen] = useState(false);
 
