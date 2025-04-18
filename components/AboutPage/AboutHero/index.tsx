@@ -17,9 +17,9 @@ const AboutHero = () => {
         </div>
 
         <div className="w-full md:w-1/2">
-          <h2 className="text-center text-white font-bold text-6xl sm:text-6xl tracking-tighter">
+          <h1 className="text-center text-4xl sm:text-6xl tracking-tighter text-white">
             About Us
-          </h2>
+          </h1>
 
           <p className="text-xl text-white/70 text-center mt-5">
             Pinnacle Technology Collective specializes in providing skilled
@@ -30,6 +30,11 @@ const AboutHero = () => {
             enhance efficiency and streamline operations through effective
             robotic solutions, ensuring optimal performance and longevity of
             their robotic assets.
+          </p>
+          <p className="text-xl text-white/70 text-center mt-5">
+            Our mission is to enable businesses to enhance efficiency and
+            streamline operations through effective robotic solutions, ensuring
+            optimal performance and longevity of their robotic assets.
           </p>
         </div>
       </div>

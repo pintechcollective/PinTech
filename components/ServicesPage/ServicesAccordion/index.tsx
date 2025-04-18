@@ -232,9 +232,9 @@ const ServicesAccordion = () => {
     <div className="bg-black text-white pt-[72px] sm:pt-14">
       <div className="container p-4 max-w-screen-lg mx-auto px-4">
         <div className=" flex justify-center flex-col lg:items-center items-start lg:text-center  text-start p-4 ">
-          <h2 className=" font-extrabold text-start text-6xl tracking-tighter   text-secondary">
+          <h1 className=" text-center text-4xl sm:text-6xl tracking-tighter  text-secondary">
             Solutions
-          </h2>
+          </h1>
           <h2 className=" font-extrabold lg:text-center text-start text-2xl tracking-tighter sm:text-xl ">
             Tailored Solutions For Your Needs
           </h2>

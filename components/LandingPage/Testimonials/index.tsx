@@ -21,11 +21,9 @@ const Testimonials = () => {
   // const secondColumn = reviews.slice(3, 6);
   // const thirdColumn = reviews.slice(6, 9);
   return (
-    <div className="bg-black text-white py-[72px] sm:py-24 text-center">
+    <div className="bg-black  text-white py-[72px] sm:py-24 text-center">
       <div className="container max-w-screen-lg mx-auto">
-        <h2 className="font-bold text-5xl tracking-tighter sm:text-6xl">
-          Testimonials
-        </h2>
+        <h1 className=" text-4xl sm:text-6xl tracking-tighter">Testimonials</h1>
       </div>
       <div className="flex py-24 items-center justify-evenly flex-col sm:flex-row ">
         {firstColumn.map(({ text, name, title, id }) => (

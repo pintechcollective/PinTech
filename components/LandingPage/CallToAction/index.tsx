@@ -4,9 +4,9 @@ const CallToAction = () => {
   return (
     <div className="bg-gradient-to-b from-black to-accent/25 text-white py-[72px] sm:py-24 text-center">
       <div className="container max-w-screen-lg mx-auto">
-        <h2 className="font-bold text-5xl tracking-tighter sm:text-6xl">
+        <h1 className="text-center text-4xl sm:text-6xl tracking-tighter">
           Get More Information Now
-        </h2>
+        </h1>
         <p className="text-xl text-white/70 mt-5"></p>
         <form className="mt-10 flex flex-col gap-2.5 justify-center items-center max-w-sm mx-auto sm:flex-row">
           {/* <input

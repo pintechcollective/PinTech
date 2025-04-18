@@ -1,5 +1,5 @@
 import React from 'react';
-
+import Link from 'next/link';
 import Feature from './Feature';
 
 const Features = () => {
@@ -24,9 +24,9 @@ const Features = () => {
   return (
     <div className="bg-black text-white py-[72px] sm:py-24">
       <div className="container max-w-screen-lg mx-auto px-4">
-        <h2 className="text-center font-bold text-5xl sm:text-6xl tracking-tighter">
+        <h1 className="text-center text-4xl sm:text-6xl tracking-tighter">
           Everything you Need
-        </h2>
+        </h1>
         <div className="max-w-xl mx-auto">
           <p className="text-xl text-white/70 text-center mt-5">
             Empowering robotics companies to grow faster by offloading the most
@@ -37,6 +37,14 @@ const Features = () => {
           {features.map(({ id, title, description }) => (
             <Feature title={title} description={description} key={id} id={id} />
           ))}
+        </div>
+        <div className="mt-[50px] flex flex-col gap-2.5 justify-center items-center max-w-sm mx-auto sm:flex-row">
+          <Link
+            href={'/pages/services'}
+            className="bg-accent text-center text-black clip-diagonal font-medium px-5 py-2 w-[150px] "
+          >
+            Services
+          </Link>
         </div>
       </div>
     </div>

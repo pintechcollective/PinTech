@@ -6,8 +6,10 @@ import Features from '@/components/LandingPage/Features';
 import Testimonials from '@/components/LandingPage/Testimonials';
 import Hero from '@/components/LandingPage/Hero';
 import LogoTicker from '../components/LandingPage/LogoTicker';
-import ProductShowCase from '../components/LandingPage/ProductShowCase';
+import AboutHero from '@/components/AboutPage/AboutHero';
+// import ProductShowCase from '../components/LandingPage/ProductShowCase';
 import RobotArmSection from '@/components/LandingPage/RobotArm';
+import Facts from '@/components/AboutPage/Facts';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -49,7 +51,10 @@ export default function Home() {
           <Features />
           <LogoTicker />
           {/* <ProductShowCase /> */}
+          <AboutHero />
+          <Facts />
           <Testimonials />
+          {/* <LogoTicker /> */}
           <FAQs />
           <CallToAction />
         </Motion>
