@@ -17,7 +17,7 @@ const Header = () => {
   // const [isLegalOpen, setLegalOpen] = useState(false);
 
   //use params to determine what page
-  //use state to determine weather or not user is on the page or not
+  //use state to determine weather or not user is on the page or not`
 
   const pathname = usePathname();
 
