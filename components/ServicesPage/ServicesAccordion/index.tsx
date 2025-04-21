@@ -52,7 +52,7 @@ const ServicesAccordion = () => {
         },
       ],
       commitment:
-        'By leveraging our extensive experience and technical know-how, we guarantee a hassle-free deployment that sets the foundation for your AMRs’ success.',
+        'By leveraging our extensive experience and technical know-how, we guarantee a hassle-free deployment that sets the foundation for your AMRs success.',
     },
     {
       id: 3,
@@ -156,6 +156,7 @@ const ServicesAccordion = () => {
                 whileInView={{ opacity: 1 }}
                 transition={{ duration: 2 }}
                 key={id}
+                onClick={() => setIsOpen(!isOpen)}
                 className="block sm:hidden"
               >
                 <Card
@@ -163,6 +164,7 @@ const ServicesAccordion = () => {
                   title={title}
                   statement={statement}
                   image={image}
+             
                 />
               </motion.div>
             ))}
