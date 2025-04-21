@@ -1,57 +1,49 @@
-'use client'
-// import type { Metadata } from 'next';
+import React from 'react';
+import type { Metadata } from 'next';
 import './globals.css';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
-import Video from '@/components/Video';
-import { usePathname } from 'next/navigation';
-import { useState,useEffect } from 'react';
 import Head from 'next/head';
 
-// export const metadata: Metadata = {
-//   title: 'Pintech | Innovative Robotic Automation Solutions',
-//   description:
-//     'Pintech specializes in cutting-edge robotic automation systems, revolutionizing industries with advanced technology and efficient solutions.',
-//   keywords:
-//     'robotic automation, industrial robots, automation systems, robotics technology, Pintech solutions',
-//   viewport: 'width=device-width, initial-scale=1.0',
-// };
+export const metadata: Metadata = {
+  title: 'Pintech | Innovative Robotic Automation Solutions',
+  description:
+    'Pintech specializes in cutting-edge robotic automation systems, revolutionizing industries with advanced technology and efficient solutions.',
+  keywords:
+    'robotic automation, industrial robots, automation systems, robotics technology, Pintech solutions',
+  viewport: 'width=device-width, initial-scale=1.0',
+};
 
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-
-
-  const pathname=usePathname();
-  const isHome= pathname ==='/';
-  const [isLoading, setIsLoading]=useState(isHome)
-
-  useEffect(()=>{
-    if(isLoading)return
-  }, [isLoading])
   return (
     <html lang="en">
       <head>
         <Head>
           <title>Pintech | Innovative Robotic Automation Solutions</title>
-          <meta name="description" content="Pintech specializes in cutting-edge robotic automation systems, revolutionizing industries with advanced technology and efficient solutions." />
-          <meta name="keywords" content="robotic automation, industrial robots, automation systems, robotics technology, Pintech solutions" />
-          <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+          <meta
+            name="description"
+            content="Pintech specializes in cutting-edge robotic automation systems, revolutionizing industries with advanced technology and efficient solutions."
+          />
+          <meta
+            name="keywords"
+            content="robotic automation, industrial robots, automation systems, robotics technology, Pintech solutions"
+          />
+          <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+          />
         </Head>
       </head>
       <body className="font-ClashDisplay antialiased">
-        {isLoading && isHome ? (
-          <Video finishLoading={()=>setIsLoading(false)}/>
-        ): (
-
         <>
-        <Header />
-        {children}
-        <Footer />
+          <Header />
+          {children}
+          <Footer />
         </>
-        )}
       </body>
     </html>
   );
