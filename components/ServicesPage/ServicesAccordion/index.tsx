@@ -164,7 +164,6 @@ const ServicesAccordion = () => {
                   title={title}
                   statement={statement}
                   image={image}
-             
                 />
               </motion.div>
             ))}

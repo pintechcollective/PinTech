@@ -1,13 +1,11 @@
 'use client';
 import React from 'react';
 import { FaArrowRightLong } from 'react-icons/fa6';
-// import Logo from '@/public/icons/PT - LogoMark - BLGR.svg';
+import { StaggeredFade } from '@/app/animations/StaggeredMotion';
 import Logo2 from '@/public/icons/PT - LogoMark - BLAGR.svg';
 import Link from 'next/link';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
-// import Image from 'next/image';
-// import RobotArm from '@/public/RobotArm,.png';
 const Hero = () => {
   return (
     <div className=" bg-black text-white bg-[linear-gradient(to_bottom,#000,#06276d_34%,#0e83fe_52%,#9cd633_98%)] py-[72px] sm:py-24 relative overflow-clip ">
@@ -45,18 +43,12 @@ const Hero = () => {
             </span>
           </Link>
         </div>
-        <div className="flex justify-center md:w-screen">
-          <h1 className="text-[2.50rem] sm:text-7xl lg:text-9xl font-bold tracking-tight text-center mt-8">
-            <a className="text-accent block md:w-screen">AMR Fleet</a>
-            <span className="block md:w-screen">Operations</span>
-          </h1>
-          {/* <Image
-            src={RobotArm}
-            alt="Robot Arm"
-            height={400}
-            width={400}
-            className="absolute"
-          /> */}
+        <div className="flex justify-center md:w-screen ">
+          <div className="text-[2.50rem] sm:text-7xl lg:text-9xl font-bold tracking-tight text-center mt-8 ">
+            <StaggeredFade text="AMR Fleet" className="text-accent" />
+
+            <StaggeredFade text="Operations" />
+          </div>
         </div>
         <div className="flex justify-center md:w-screen">
           <p className="text-center text-xl mt-8 max-w-md p-4">
