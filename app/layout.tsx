@@ -12,6 +12,10 @@ export const metadata: Metadata = {
   keywords:
     'robotic automation, industrial robots, automation systems, robotics technology, Pintech solutions',
   viewport: 'width=device-width, initial-scale=1.0',
+  icons: {
+    icon: '/Logo.png',
+    apple: '/Logo.png',
+  },
 };
 
 export default function RootLayout({
@@ -36,6 +40,7 @@ export default function RootLayout({
             name="viewport"
             content="width=device-width, initial-scale=1.0"
           />
+          <link rel="icon" href="/Logo.png" type="image/png" />
         </Head>
       </head>
       <body className="font-ClashDisplay antialiased">
