@@ -16,12 +16,18 @@ const images = [
   { id: 4, src: Logo2 },
   { id: 5, src: Logo1 },
   { id: 6, src: Logo2 },
+  { id: 7, src: Logo1 },
+  { id: 8, src: Logo2 },
+  { id: 9, src: Logo1 },
+  { id: 10, src: Logo2 },
+  { id: 11, src: Logo1 },
+  { id: 12, src: Logo2 },
 ];
 
 const LogoTicker = () => {
   return (
     <div className="bg-black text-white py-12">
-      <div className="container w-screen mx-auto px-4">
+      <div className="w-screen mx-auto px-4">
         {/* <h2 className="text-lg text-center text-white/70">
         Empowering robotics companies to grow faster by offloading the most costly and cumbersome part of the business, fleet operations.
         </h2> */}
@@ -29,7 +35,7 @@ const LogoTicker = () => {
           <motion.div
             className="flex flex-none gap-16 pr-16 "
             transition={{
-              duration: 12,
+              duration: 16,
               ease: 'linear',
               repeat: Infinity,
             }}

@@ -13,7 +13,7 @@ import Facts from '@/components/AboutPage/Facts';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Home - Pinnacle Technology Collective',
+  title: 'Pinnacle Technology Collective',
   description:
     'Welcome to Pinnacle Technology Collective, your partner in robotics and automation solutions. Discover our mission, services, and the team dedicated to innovation and excellence.',
   keywords: [
