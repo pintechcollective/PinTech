@@ -123,12 +123,15 @@ const Footer = () => {
               height={30}
               alt="pn"
             /> */}
+            <a href='https://www.linkedin.com/company/pintechcollective/about/'target='_blank'>
+
             <Image
               src="https://www.svgrepo.com/show/28145/linkedin.svg"
               width={30}
               height={30}
               alt="in"
-            />
+              />
+              </a>
           </div>
         </div>
         <p className="font-sans text-white mt-4 text-start text-sm md:text-center md:text-lg md:p-4">

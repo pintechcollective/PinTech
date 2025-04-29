@@ -21,27 +21,27 @@ const Testimonials = () => {
   // const secondColumn = reviews.slice(3, 6);
   // const thirdColumn = reviews.slice(6, 9);
   return (
-    <div className="bg-gradient-to-b from-black via-black to-[#0e83fe] py-[72px] sm:py-24 text-center text-white">
+    <div className="bg-gradient-to-b from-black via-black to-[#0e83fe] py-[24px] sm:py-24 text-center text-white">
       <div className="container max-w-screen-lg mx-auto">
         <h1 className=" text-4xl sm:text-6xl tracking-tighter">Testimonials</h1>
       </div>
-      <div className="flex py-24 items-center justify-evenly flex-col sm:flex-row ">
+      <div className="flex py-24 items-center justify-around flex-col sm:flex-row ">
         {firstColumn.map(({ text, name, title, id }) => (
           <div
             key={id}
-            className=" px-5 py-10 text-center rounded-xl flex-1 sm:max-w-sm relative "
+            className=" py-10 text-center rounded-xl flex-1 sm:max-w-sm lg:max-w-lg relative "
           >
             <Motion>
-              <div className="text-xl mb-4">
+              <div className="lg:text-3xl text-xl mb-4">
                 {'"'}
                 {text}
                 {'"'}
               </div>
               <div className="flex flex-col gap-4">
-                <p className="text-md">
+                <p className="text-lg">
                   -{`  `}
-                  <span className="text-md text-secondary">{name}</span>,{`  `}
-                  <span className="text-md text-accent">
+                  <span className=" text-secondary">{name}</span>,{`  `}
+                  <span className="text-accent">
                     {`  `}
                     {title}
                   </span>

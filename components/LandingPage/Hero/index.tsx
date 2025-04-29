@@ -33,7 +33,7 @@ const Hero = () => {
             href={'/pages/contact'}
             className=" inline-flex gap-3 border py-1 px-2 rounded-lg border-white/30"
           >
-            <span className="bg-[linear-gradient(to_right,#f87AFF,#FB93D0,#FFDD99,#C3F0B2,#2FD8FE)] text-transparent bg-clip-text [-webkit-background-clip:text]">
+            <span className="bg-secondary text-transparent bg-clip-text [-webkit-background-clip:text]">
               The Solutions are here
             </span>
 
