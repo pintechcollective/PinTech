@@ -38,7 +38,7 @@ const Feature = ({
 
     animateBorder();
   }, []);
-
+//allow
  return (
  <div
       key={id}
