@@ -8,7 +8,7 @@ import Hero from '@/components/LandingPage/Hero';
 import LogoTicker from '../components/LandingPage/LogoTicker';
 import AboutHero from '@/components/AboutPage/AboutHero';
 // import ProductShowCase from '../components/LandingPage/ProductShowCase';
-import RobotArmSection from '@/components/LandingPage/RobotArm';
+// import RobotArmSection from '@/components/LandingPage/RobotArm';
 import Facts from '@/components/AboutPage/Facts';
 import { Metadata } from 'next';
 

@@ -10,7 +10,7 @@ import { motion } from 'framer-motion';
 import MobileLogo from '@/public/icons/PT - LogoMark - BLGR.svg';
 import { usePathname } from 'next/navigation';
 import Container from '../Container';
-import AnnouncementBar from '../AnnouncementBar';
+// import AnnouncementBar from '../AnnouncementBar';
 const Header = () => {
   const [isOpen, setOpen] = useState(false);
 
