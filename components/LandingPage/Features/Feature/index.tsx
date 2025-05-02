@@ -16,7 +16,7 @@ const Feature = ({
   id: number;
   title: string;
   description: string;
-  image: string
+  image: string;
 }) => {
   const offsetX = useMotionValue(0);
   const offsetY = useMotionValue(0);
