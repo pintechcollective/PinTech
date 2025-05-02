@@ -1,39 +1,49 @@
 'use client';
-
+import Image from 'next/image';
 import React, { useEffect, useRef } from 'react';
 import { BsRobot } from 'react-icons/bs';
-import { motion, useMotionTemplate, useMotionValue } from 'framer-motion';
+import {
+  motion,
+  useMotionTemplate,
+  useMotionValue,
+  animate,
+} from 'framer-motion';
 const Feature = ({
   id,
   title,
   description,
+  image,
 }: {
   id: number;
   title: string;
   description: string;
+  image: string
 }) => {
-  const offsetX = useMotionValue(-100);
-  const offsetY = useMotionValue(-100);
+  const offsetX = useMotionValue(0);
+  const offsetY = useMotionValue(0);
   const maskImage = useMotionTemplate`radial-gradient(100px 100px at ${offsetX}px ${offsetY}px, black, transparent)`;
-  const border = useRef<HTMLDivElement>(null);
 
-  useEffect(() => {
-    const updateMousePosition = (e: MouseEvent) => {
-      if (!border.current) return;
+  React.useEffect(() => {
+    const animateBorder = () => {
+      animate(offsetX, [0, 200, 200, 0, 0], {
+        duration: 6,
+        repeat: Infinity,
+        ease: 'linear',
+      });
+      animate(offsetY, [0, 0, 200, 200, 0], {
+        duration: 6,
+        repeat: Infinity,
+        ease: 'linear',
+      });
+    };
 
-      const borderRect = border.current?.getBoundingClientRect();
-      offsetX.set(e.x - borderRect.x);
-      offsetY.set(e.y - borderRect.y);
-    };
-    window.addEventListener('mousemove', updateMousePosition);
-    return () => {
-      window.removeEventListener('mousemove', updateMousePosition);
-    };
-  }, [offsetX, offsetY]);
-  return (
+    animateBorder();
+  }, []);
+
+ return (
     <div
       key={id}
-      className="border border-white/30 px-5 py-10 text-center rounded-xl flex-1 sm:max-w-sm relative "
+      className="border border-white/30 px-8 py-12 text-center rounded-xl flex-1 sm:max-w-lg relative "
     >
       <motion.div
         className="absolute inset-0 border-4 border-blue-500 rounded-xl"
@@ -41,7 +51,6 @@ const Feature = ({
           WebkitMaskImage: maskImage,
           maskImage,
         }}
-        ref={border}
       ></motion.div>
       <motion.div
         className="inline-flex h-14 w-14 bg-white text-black justify-center items-center rounded-lg"
@@ -52,10 +61,10 @@ const Feature = ({
           opacity: 1,
         }}
       >
-        <BsRobot />
+       <Image alt="icon" width={80}  height={80} src={image}/>
       </motion.div>
       <div>
-        <h3 className="mt-6 font-bold">{title}</h3>
+        <h3 className="mt-6 font-bold font-[FusionFont] text-xl">{title}</h3>
         <p className="mt-2 text-white/70">{description}</p>
       </div>
     </div>

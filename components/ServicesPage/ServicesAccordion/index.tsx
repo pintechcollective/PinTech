@@ -206,7 +206,7 @@ const ServicesAccordion = () => {
                       {detail.description}
                     </ul>
                   ))}
-                <div className="flex flex-col md:flex-row lg:flex-row flex-wrap justify-center gap-6 items-center">
+                {/* <div className="flex flex-col md:flex-row lg:flex-row flex-wrap justify-center gap-6 items-center">
                   {types &&
                     types.map((type, index) => (
                       <div
@@ -220,7 +220,7 @@ const ServicesAccordion = () => {
                       </div>
                     ))}
                   {commitment && <p className="mt-4">{commitment}</p>}
-                </div>
+                </div> */}
               </motion.div>
             )}
           </AnimatePresence>

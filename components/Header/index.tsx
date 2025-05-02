@@ -29,7 +29,7 @@ const Header = () => {
 
   return (
     <header className="flex sticky top-0 z-10 flex-col bg-black py-3">
-      <AnnouncementBar />
+    {/* <AnnouncementBar/> Client wanted Bar removed */} 
       {/* Container */}
 
       <Container>
@@ -38,8 +38,8 @@ const Header = () => {
             <Image
               src={Logo}
               alt="sas logo"
-              height={150}
-              width={150}
+              height={250}
+              width={250}
               className=" text-center object-cover"
             />
           </Link>

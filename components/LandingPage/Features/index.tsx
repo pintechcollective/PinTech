@@ -8,16 +8,19 @@ const Features = () => {
       id: 1,
       title: 'Train',
       description: 'Empowering success for your team and ours',
+      image: "cardicons/Train.svg"
     },
     {
       id: 2,
       title: 'Deploy',
       description: 'Seamless integration for optimal performance',
+       image: "cardicons/Deploy.svg"
     },
     {
       id: 3,
       title: 'Maintain',
       description: 'Ensuring maximum uptime, reliability, and efficiency',
+       image: "cardicons/Maintain.svg"
     },
   ];
 
@@ -34,8 +37,8 @@ const Features = () => {
           </p>
         </div>
         <div className="mt-16 flex flex-col gap-4 sm:flex-row sm:justify-center">
-          {features.map(({ id, title, description }) => (
-            <Feature title={title} description={description} key={id} id={id} />
+          {features.map(({ id, title, description, image }) => (
+            <Feature title={title} description={description} key={id} id={id} image={image}/>
           ))}
         </div>
         <div className="mt-[50px] flex flex-col gap-2.5 justify-center items-center max-w-sm mx-auto sm:flex-row">

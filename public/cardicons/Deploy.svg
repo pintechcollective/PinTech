@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 256 256">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#radial-gradient-2);
+      }
+
+      .cls-2 {
+        filter: url(#outer-glow-1);
+      }
+
+      .cls-3 {
+        fill: url(#radial-gradient);
+      }
+
+      .cls-4 {
+        fill: #06a2f9;
+      }
+    </style>
+    <radialGradient id="radial-gradient" cx="128" cy="128" fx="128" fy="128" r="314.54" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#06a2f9" stop-opacity="0"/>
+      <stop offset=".2" stop-color="#06a2f9" stop-opacity=".07"/>
+      <stop offset=".51" stop-color="#06a2f9" stop-opacity=".2"/>
+    </radialGradient>
+    <filter id="outer-glow-1" x="15" y="15" width="225" height="225" filterUnits="userSpaceOnUse">
+      <feOffset dx="0" dy="0"/>
+      <feGaussianBlur result="blur" stdDeviation="20"/>
+      <feFlood flood-color="#06a2f9" flood-opacity=".75"/>
+      <feComposite in2="blur" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <radialGradient id="radial-gradient-2" cx="89.89" cy="74.55" fx="89.89" fy="74.55" r="171" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#06a2f9" stop-opacity=".2"/>
+      <stop offset=".93" stop-color="#06a2f9" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <g id="Layer_3" data-name="Layer 3">
+    <rect class="cls-3" width="256" height="256" rx="68.42" ry="68.42"/>
+  </g>
+  <g id="Layer_2" data-name="Layer 2">
+    <g>
+      <g class="cls-2">
+        <path class="cls-4" d="M149.2,179.66h-42.82c-16.8,0-30.46-13.67-30.46-30.46v-42.82c0-16.8,13.67-30.46,30.46-30.46h42.82c16.8,0,30.46,13.67,30.46,30.46v42.82c0,16.8-13.67,30.46-30.46,30.46ZM106.39,81.92c-13.49,0-24.46,10.97-24.46,24.46v42.82c0,13.49,10.97,24.46,24.46,24.46h42.82c13.49,0,24.46-10.97,24.46-24.46v-42.82c0-13.49-10.97-24.46-24.46-24.46h-42.82Z"/>
+        <path class="cls-4" d="M121.9,143.01h0c-.8,0-1.56-.32-2.12-.88l-12.66-12.66c-1.17-1.17-1.17-3.07,0-4.24,1.17-1.17,3.07-1.17,4.24,0l10.54,10.54,22.32-22.31c1.17-1.17,3.07-1.17,4.24,0,1.17,1.17,1.17,3.07,0,4.24l-24.44,24.44c-.56.56-1.33.88-2.12.88Z"/>
+      </g>
+      <rect class="cls-1" x="78.92" y="78.92" width="97.75" height="97.75" rx="27.46" ry="27.46"/>
+    </g>
+  </g>
+</svg>

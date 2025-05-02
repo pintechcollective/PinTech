@@ -25,7 +25,7 @@ const Facts = () => {
     },
   ];
   return (
-    <div className="bg-black text-white bg-gradient-to-b from-[#0e83fe] to-black py-[42px] ">
+    <div className="bg-black text-white bg-gradient-to-b from-[#0e83fe] to-black py-[72px] ">
       <div className="flex flex-col justify-center items-center">
         <h1 className="text-center text-4xl sm:text-6xl tracking-tighter">
           Experience That Counts

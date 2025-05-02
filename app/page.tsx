@@ -47,7 +47,7 @@ export default function Home() {
       <div className="overflow-x-hidden">
         <Motion>
           <Hero />
-          <RobotArmSection />
+          {/* <RobotArmSection /> Sidelined at Clients request*/}
           <Features />
           <LogoTicker />
           {/* <ProductShowCase /> */}
