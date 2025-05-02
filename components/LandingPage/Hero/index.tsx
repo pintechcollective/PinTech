@@ -1,6 +1,6 @@
 'use client';
 import React from 'react';
-import { FaArrowRightLong } from 'react-icons/fa6';
+// import { FaArrowRightLong } from 'react-icons/fa6';
 import { StaggeredFade } from '@/app/animations/StaggeredMotion';
 import Logo2 from '@/public/icons/PT - LogoMark - BLAGR.svg';
 import Link from 'next/link';

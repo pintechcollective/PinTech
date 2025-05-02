@@ -1,7 +1,6 @@
 'use client';
 import Image from 'next/image';
-import React, { useEffect, useRef } from 'react';
-import { BsRobot } from 'react-icons/bs';
+import React from 'react';
 import {
   motion,
   useMotionTemplate,

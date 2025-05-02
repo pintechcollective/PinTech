@@ -39,7 +39,7 @@ const Services = () => {
       <Motion>
         {/* <ServicesGrid /> */}
         <ServicesAccordion />
-        <Cards />
+        {/* <Cards /> */}
         <PricingAction />
       </Motion>
     </div>

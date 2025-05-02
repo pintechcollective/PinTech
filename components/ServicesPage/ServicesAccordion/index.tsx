@@ -107,19 +107,19 @@ const ServicesAccordion = () => {
       id: 1,
       title: 'Train',
       statement: 'Empowering success for your team and ours',
-      image: '/robots/Mock bot Small 2.jpg',
+      image: '/newcards/train.jpg',
     },
     {
       id: 2,
       title: 'Deploy',
       statement: '',
-      image: '/robots/Mock Bot 1.jpg',
+      image: '/newcards/deploy.jpeg',
     },
     {
       id: 3,
       title: 'Maintain',
       statement: '',
-      image: '/robots/Mock bot Small 3.jpg',
+      image: '/newcards/maintain.png',
     },
   ];
 
@@ -147,27 +147,6 @@ const ServicesAccordion = () => {
     const [isOpen, setIsOpen] = React.useState(false);
     return (
       <div>
-        <div className="flex flex-wrap justify-evenly ">
-          {solutions
-            .filter((solution) => solution.title === section)
-            .map(({ id, title, statement, image }) => (
-              <motion.div
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                transition={{ duration: 2 }}
-                key={id}
-                onClick={() => setIsOpen(!isOpen)}
-                className="block sm:hidden"
-              >
-                <Card
-                  id={id}
-                  title={title}
-                  statement={statement}
-                  image={image}
-                />
-              </motion.div>
-            ))}
-        </div>
         <div
           key={id}
           className="py-7 border-b border-secondary/30 "
@@ -193,6 +172,27 @@ const ServicesAccordion = () => {
                 exit={{ opacity: 0, height: 0, marginTop: 0 }}
               >
                 {text && <p>{text}</p>}
+        <div className="flex flex-wrap justify-evenly ">
+          {solutions
+            .filter((solution) => solution.title === section)
+            .map(({ id, title, statement, image }) => (
+              <motion.div
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                transition={{ duration: 2 }}
+                key={id}
+                onClick={() => setIsOpen(!isOpen)}
+                className=""
+              >
+                <Card
+                  id={id}
+                  title={title}
+                  statement={statement}
+                  image={image}
+                />
+              </motion.div>
+            ))}
+        </div>
 
                 {details &&
                   details.map((detail, index) => (

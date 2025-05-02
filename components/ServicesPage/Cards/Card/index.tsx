@@ -24,7 +24,9 @@ const Card = ({
         className="absolute inset-0 h-full w-full object-cover"
       />
       <div className="absolute inset-0 bg-gradient-to-t from-secondary/40 via-secondary/10"></div>
-      <h1 className="z-10 mt-3 text-3xl font-bold text-white">{title}</h1>
+      <h1 className="z-10 mt-3 text-3xl font-bold text-white">
+        {/* {title} */}
+        </h1>
       {statement && (
         <div className="z-10 gap-y-1 overflow-hidden text-lg leading-6 text-white/90">
           {/* {statement} */}
