@@ -128,8 +128,8 @@ const ServicesAccordion = () => {
     section,
     text,
     details,
-    commitment,
-    types,
+    // commitment,
+    // types,
   }: {
     id: number;
     section: string;
@@ -138,11 +138,11 @@ const ServicesAccordion = () => {
       purpose?: string;
       description: string;
     }[];
-    commitment: string;
-    types?: {
-      title: string;
-      description: string;
-    }[];
+    // commitment: string;
+    // types?: {
+    //   title: string;
+    //   description: string;
+    // }[];
   }) => {
     const [isOpen, setIsOpen] = React.useState(false);
     return (
