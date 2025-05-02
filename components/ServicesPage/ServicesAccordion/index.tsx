@@ -241,12 +241,12 @@ const ServicesAccordion = () => {
           </h2>
         </div>
         <div className="mt-12 max-w-[648px] lg:max-w-[4000px] mx-auto ">
-          {sections.map(({ id, section, text, details, commitment, types }) => (
+          {sections.map(({ id, section, text, details }) => (
             <AccordionItem
               section={section}
-              commitment={commitment}
+              // commitment={commitment}
               text={text}
-              types={types}
+              // types={types}
               details={details}
               id={id}
               key={id}
