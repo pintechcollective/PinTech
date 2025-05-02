@@ -19,6 +19,7 @@ export const Default: Story = {
     id: 1,
     title: 'Train',
     description: 'Empowering success for your team and ours',
+          image: "cardicons/Train.svg"
   },
 };
 
@@ -27,6 +28,7 @@ export const Deploy: Story = {
     id: 2,
     title: 'Deploy',
     description: 'Seamless integration for optimal performance',
+          image: "cardicons/Deploy.svg"
   },
 };
 
@@ -35,5 +37,6 @@ export const Maintain: Story = {
     id: 3,
     title: 'Maintain',
     description: 'Ensuring maximum uptime, reliability, and efficiency',
+          image: "cardicons/Maintain.svg"
   },
 };
