@@ -57,10 +57,10 @@ const Feature = ({
           opacity: 1,
         }}
       >
-        <div>
+        {/* <div>
 
        <Image alt="icon" width={80}  height={80} src={image}/>
-        </div>
+        </div> */}
       </motion.div>
       <div>
         <h3 className="mt-6 font-bold font-[FusionFont] text-xl">{title}</h3>
