@@ -40,7 +40,8 @@ const Feature = ({
   }, []);
 //allow
  return (
- <div key={id}className="border border-white/30 px-8 py-12 text-center rounded-xl flex-1 sm:max-w-lg relative">
+ <div
+ className="border border-white/30 px-8 py-12 text-center rounded-xl flex-1 sm:max-w-lg relative">
       <motion.div
         className="absolute inset-0 border-4 border-blue-500 rounded-xl"
         style={{
