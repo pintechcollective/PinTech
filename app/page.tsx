@@ -2,7 +2,7 @@ import React from 'react';
 import { Motion } from './animations/Motion';
 import CallToAction from '../components/LandingPage/CallToAction';
 import FAQs from '../components/LandingPage/FAQs';
-import Features from '@/components/LandingPage/Features';
+// import Features from '@/components/LandingPage/Features';
 import Testimonials from '@/components/LandingPage/Testimonials';
 import Hero from '@/components/LandingPage/Hero';
 import LogoTicker from '../components/LandingPage/LogoTicker';
@@ -48,7 +48,7 @@ export default function Home() {
         <Motion>
           <Hero />
           {/* <RobotArmSection /> Sidelined at Clients request*/}
-          <Features />
+          {/* <Features /> */}
           <LogoTicker />
           {/* <ProductShowCase /> */}
           <AboutHero />
