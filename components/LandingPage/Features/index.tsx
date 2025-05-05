@@ -8,19 +8,19 @@ const Features = () => {
       id: 1,
       title: 'Train',
       description: 'Empowering success for your team and ours',
-      image: "cardicons/Train.svg"
+      image: "cardicons/Train.svg",
     },
     {
       id: 2,
       title: 'Deploy',
       description: 'Seamless integration for optimal performance',
-       image: "cardicons/Deploy.svg"
+       image: "cardicons/Deploy.svg",
     },
     {
       id: 3,
       title: 'Maintain',
       description: 'Ensuring maximum uptime, reliability, and efficiency',
-       image: "cardicons/Maintain.svg"
+       image: "cardicons/Maintain.svg",
     },
   ];
 
