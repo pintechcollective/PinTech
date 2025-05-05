@@ -8,12 +8,12 @@ import {
   animate,
 } from 'framer-motion';
 const Feature = ({
-  id,
+  
   title,
   description,
   image,
 }: {
-  id: number;
+
   title: string;
   description: string;
   image: string;
