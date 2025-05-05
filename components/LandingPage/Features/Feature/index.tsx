@@ -40,6 +40,8 @@ const Feature = ({
   }, []);
 //allow
  return (
+    <>
+    
  <div
       key={id}
       className="border border-white/30 px-8 py-12 text-center rounded-xl flex-1 sm:max-w-lg relative"
@@ -70,6 +72,7 @@ const Feature = ({
         <p className="mt-2 text-white/70">{description}</p>
       </div>
     </div>
+    </>
   );
 };
 
