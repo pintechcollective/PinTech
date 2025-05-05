@@ -23,7 +23,7 @@ export const metadata = {
     type: 'website',
     images: [
       {
-        url: '/icons/PT - LogoMark - DBLBL.svg',
+        url: '/NewIcon.png',
         width: 800,
         height: 600,
         alt: 'Pintech Logo',
