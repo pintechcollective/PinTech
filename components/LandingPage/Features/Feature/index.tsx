@@ -42,7 +42,8 @@ const Feature = ({
   }, []);
 
  return (
- <div
+
+ <section
  key={id}
  className="border border-white/30 px-8 py-12 text-center rounded-xl flex-1 sm:max-w-lg relative">
       <motion.div
@@ -57,7 +58,7 @@ const Feature = ({
         <h3 className="mt-6 font-bold font-[FusionFont] text-xl">{title}</h3>
         <p className="mt-2 text-white/70">{description}</p>
       </div>
-    </div>
+      </section>
   );
 };
 
