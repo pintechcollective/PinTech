@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
-import Feature from './Feature';
+// import Feature from './Feature';
 
 const Features = () => {
   const features = [
@@ -36,11 +36,11 @@ const Features = () => {
             costly and cumbersome part of the business, fleet operations.
           </p>
         </div>
-        <div className="mt-16 flex flex-col gap-4 sm:flex-row sm:justify-center">
+        {/* <div className="mt-16 flex flex-col gap-4 sm:flex-row sm:justify-center">
           {features.map(({ id, title, description, image }) => (
             <Feature title={title} description={description} key={id} id={id} image={image}/>
           ))}
-        </div>
+        </div> */}
         <div className="mt-[50px] flex flex-col gap-2.5 justify-center items-center max-w-sm mx-auto sm:flex-row">
           <Link
             href={'/pages/services'}
