@@ -26,10 +26,7 @@ const AboutHero = () => {
             technicians and consulting services for Autonomous Mobile Robot
             (AMR) companies. Our focus is on deploying and maintaining robots,
             offering AMR companies an affordable and reliable Operations and
-            Maintenance Program provider. Our mission is to enable businesses to
-            enhance efficiency and streamline operations through effective
-            robotic solutions, ensuring optimal performance and longevity of
-            their robotic assets.
+            Maintenance Program provider.
           </p>
           <p className="text-xl text-white/70 text-center mt-5">
             Our mission is to enable businesses to enhance efficiency and

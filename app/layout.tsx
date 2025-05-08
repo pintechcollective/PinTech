@@ -12,10 +12,6 @@ export const metadata: Metadata = {
   keywords:
     'robotic automation, industrial robots, automation systems, robotics technology, Pintech solutions',
   viewport: 'width=device-width, initial-scale=1.0',
-  icons: {
-    icon: '/Logo.png',
-    apple: '/Logo.png',
-  },
 };
 
 export default function RootLayout({

@@ -234,7 +234,7 @@ const ServicesAccordion = () => {
       <div className="container p-4 max-w-screen-lg mx-auto px-4">
         <div className=" flex justify-center flex-col lg:items-center items-start lg:text-center  text-start p-4 ">
           <h1 className=" text-center text-4xl sm:text-6xl tracking-tighter  text-secondary">
-            Solutions
+            Services
           </h1>
           <h2 className=" font-extrabold lg:text-center text-start text-2xl tracking-tighter sm:text-xl ">
             Tailored Solutions For Your Needs
