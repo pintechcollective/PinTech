@@ -171,29 +171,32 @@ const ServicesAccordion = () => {
                 animate={{ opacity: 1, height: 'auto', marginTop: '16px' }}
                 exit={{ opacity: 0, height: 0, marginTop: 0 }}
               >
-                {text && <p>{text}</p>}
-        <div className="flex flex-wrap justify-evenly ">
-          {solutions
-            .filter((solution) => solution.title === section)
-            .map(({ id, title, statement, image }) => (
-              <motion.div
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                transition={{ duration: 2 }}
-                key={id}
-                onClick={() => setIsOpen(!isOpen)}
-                className=""
-              >
-                <Card
-                  id={id}
-                  title={title}
-                  statement={statement}
-                  image={image}
-                />
-              </motion.div>
-            ))}
-        </div>
-
+                <div className="flex flex-col lg:flex-row items-center">
+                  <div className="flex-1 pr-4">
+                    {text && <p>{text}</p>}
+                  </div>
+                  <div className="flex flex-wrap justify-start flex-1">
+                    {solutions
+                      .filter((solution) => solution.title === section)
+                      .map(({ id, title, statement, image }) => (
+                        <motion.div
+                          initial={{ opacity: 0 }}
+                          whileInView={{ opacity: 1 }}
+                          transition={{ duration: 2 }}
+                          key={id}
+                          onClick={() => setIsOpen(!isOpen)}
+                          className="flex-none"
+                        >
+                          <Card
+                            id={id}
+                            title={title}
+                            statement={statement}
+                            image={image}
+                          />
+                        </motion.div>
+                      ))}
+                  </div>
+                </div>
                 {details &&
                   details.map((detail, index) => (
                     <ul
