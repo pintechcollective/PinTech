@@ -22,7 +22,7 @@ const AboutHero = () => {
           </h1>
 
           <p className="text-xl text-white/70 text-center mt-5">
-            Pinnacle Technology Collective specializes in providing skilled
+            PinTech specializes in providing skilled
             technicians and consulting services for Autonomous Mobile Robot
             (AMR) companies. Our focus is on deploying and maintaining robots,
             offering AMR companies an affordable and reliable Operations and

@@ -10,7 +10,7 @@ const Testimonials = () => {
     },
     {
       id: 2,
-      text: 'Jeff and Chris, the Founders of Pinnacle Technology Collective, played a key role in scaling our field operations and maintenance program during their tenure at Cobalt Robotics. Their practical approach and deep understanding of robotics operations made them a valuable part of the team. Im confident that with Pinnacle Technology Collective, businesses will receive solid, dependable service and support for their robot operations.',
+      text: 'The Founders of Pinnacle Technology Collective, played a key role in scaling our field operations and maintenance program during their tenure at Cobalt Robotics. Their practical approach and deep understanding of robotics operations made them a valuable part of the team. Im confident that with Pinnacle Technology Collective, businesses will receive solid, dependable service and support for their robot operations.',
       name: 'Mark Powers ',
       title:
         'Former Director of Senior VP of Operations and Maintenance @ Cobalt Robotics',
