@@ -171,11 +171,23 @@ const ServicesAccordion = () => {
                 animate={{ opacity: 1, height: 'auto', marginTop: '16px' }}
                 exit={{ opacity: 0, height: 0, marginTop: 0 }}
               >
-                <div className="flex flex-col lg:flex-row items-center">
-                  <div className="flex-1 pr-4">
-                    {text && <p>{text}</p>}
+                <div className="flex flex-col lg:flex-row justify-center items-center lg:items-start lg:gap-8">
+                  <div className="flex-1">
+                    {text && <p className="mb-6">{text}</p>}
+                    {details &&
+                      details.map((detail, index) => (
+                        <ul
+                          className="text-start text-lg list-disc p-4 sm:p-2"
+                          key={index}
+                        >
+                          <li className="mt-4 sm:mt-2 p-2 sm:p-1 text-accent">
+                            {detail.purpose}:
+                          </li>{' '}
+                          {detail.description}
+                        </ul>
+                      ))}
                   </div>
-                  <div className="flex flex-wrap justify-start flex-1">
+                  <div className="flex justify-center items-center w-full lg:w-auto">
                     {solutions
                       .filter((solution) => solution.title === section)
                       .map(({ id, title, statement, image }) => (
@@ -185,7 +197,6 @@ const ServicesAccordion = () => {
                           transition={{ duration: 2 }}
                           key={id}
                           onClick={() => setIsOpen(!isOpen)}
-                          className="flex-none"
                         >
                           <Card
                             id={id}
@@ -197,33 +208,6 @@ const ServicesAccordion = () => {
                       ))}
                   </div>
                 </div>
-                {details &&
-                  details.map((detail, index) => (
-                    <ul
-                      className="text-start  text-lg list-disc p-4 sm:p-2 sm:m-6 m-6"
-                      key={index}
-                    >
-                      <li className="mt-4 sm:mt-2 p-2 sm:p-1 text-accent">
-                        {detail.purpose}:
-                      </li>{' '}
-                      {detail.description}
-                    </ul>
-                  ))}
-                {/* <div className="flex flex-col md:flex-row lg:flex-row flex-wrap justify-center gap-6 items-center">
-                  {types &&
-                    types.map((type, index) => (
-                      <div
-                        className="border border-secondary/30 px-5 py-10 text-center rounded-xl flex-1 sm:max-w-sm relative flex-row "
-                        key={index}
-                      >
-                        <p className="mt-4 sm:mt-2 p-2 sm:p-1 text-accent">
-                          {type.title}:
-                        </p>{' '}
-                        <p>{type.description}</p>
-                      </div>
-                    ))}
-                  {commitment && <p className="mt-4">{commitment}</p>}
-                </div> */}
               </motion.div>
             )}
           </AnimatePresence>
