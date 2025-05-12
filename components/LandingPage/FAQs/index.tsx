@@ -22,19 +22,19 @@ const FAQs = () => {
       id: 3,
       questions: 'Do you offer on-site servicing?',
       answers:
-        'Yes, each of Pintech™ services are done on-site wherever your fleet is. Check our Services Page for more information.',
+        'Yes, each of PinTech™ services are done on-site wherever your fleet is. Check our Services Page for more information.',
     },
     {
       id: 4,
-      questions: 'How much is Pintech’s™ services?',
+      questions: 'How much is PinTech’s services?',
       answers:
         'We offer tailored pricing based on our customers’ specific fleet needs. Reach out to us directly for customized pricing for your fleet.',
     },
     {
       id: 5,
-      questions: 'Are your technicians certified?',
+      questions: 'Are your technicians Certified?',
       answers:
-        'Yes. Every Pintech™ technician goes through a rigorous vetting and training process until they become “PinTech certified”. Each of our technicians are held to the highest standards of quality and continuous improvement.',
+        'Yes. Every PinTech technician goes through a rigorous vetting and training process until they become “PinTech certified”. Each of our technicians are held to the highest standards of quality and continuous improvement.',
     },
   ];
 

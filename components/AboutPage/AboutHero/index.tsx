@@ -18,11 +18,11 @@ const AboutHero = () => {
 
         <div className="w-full md:w-1/2">
           <h1 className="text-center text-4xl sm:text-6xl tracking-tighter text-white">
-            About Us
+          About Us
           </h1>
 
           <p className="text-xl text-white/70 text-center mt-5">
-            Pinnacle Technology Collective specializes in providing skilled
+        PinTech specializes in providing skilled
             technicians and consulting services for Autonomous Mobile Robot
             (AMR) companies. Our focus is on deploying and maintaining robots,
             offering AMR companies an affordable and reliable Operations and
@@ -40,3 +40,5 @@ const AboutHero = () => {
 };
 
 export default AboutHero;
+
+//adding new header
