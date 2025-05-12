@@ -22,7 +22,7 @@ const FAQs = () => {
       id: 3,
       questions: 'Do you offer on-site servicing?',
       answers:
-        'Yes, each of PinTech™ services are done on-site wherever your fleet is. Check our Services Page for more information.',
+        'Yes, each of PinTech services are done on-site wherever your fleet is. Check our Services Page for more information.',
     },
     {
       id: 4,
